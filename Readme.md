@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Artem Naumov](https://up.htmlacademy.ru/adaptive/9/user/244574).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мусаэльян](https://up.htmlacademy.ru/htmlcss/15/user/124940).
 
 ---
 
