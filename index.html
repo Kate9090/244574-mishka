@@ -8,28 +8,131 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo">
-        <img class="logo__img" src="#" alt="Мишка">
-      </a>
-      <nav class="main-menu main-menu--closed main-menu--nojs">
-        <button class="main-menu__toggle main-menu__toggle--open">Открыть меню</button>
-        <div class="main-menu__conteiner">
-          <ul class="main-menu__list">
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Каталог товаров</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link">Вязание на заказ</a>
-            </li>
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link main-menu__link--search">Поиск по сайту</a>
-            </li>
-            <li class="main-menu__item cart">
-              <a href="#" class="main-menu__link main-menu__link--cart">Корзина: <span class="cart__state">пока пуста</span></a>
-            </li>
+      <div class="main-header__container">
+        <a class="logo">
+          <img class="logo__img" src="#" alt="Мишка">
+        </a>
+        <nav class="main-menu main-menu--closed main-menu--nojs">
+          <button class="main-menu__toggle main-menu__toggle--open">Открыть меню</button>
+          <div class="main-menu__conteiner">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Каталог товаров</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Вязание на заказ</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link main-menu__link--search">Поиск по сайту</a>
+              </li>
+              <!-- Тут добавил еще один независимый блок cart, чтобы на него навесить логику смену состояния корзины,
+                  может еще где-то пригодится.
+                  А внешний вид конкретно для меню - это main-menu__item и main-menu__link.
+              -->
+              <li class="main-menu__item cart">
+                <a href="#" class="main-menu__link main-menu__link--cart">Корзина: <span class="cart__state">пока пуста</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="promo">
+      <div class="promo__header">
+        <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
+      </div>
+      <div class="promo__categories">
+        <ul class="categories">
+          <li class="categories__item categories__item--interior">
+            <a class="categories__link">Предметы интерьера</a>
+          </li>
+          <li class="categories__item categories__item--toys">
+            <a class="categories__link">Детские игрушки</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <article class="best-seller">
+      <h2 class="best-seller__title">Вязаные корзинки</h2>
+      <strong class="best-seller__state">Товар недели</strong>
+      <p class="best-seller__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+      </p>
+      <table class="best-seller__table">
+        <tr class="best-seller__table-row">
+          <td class="best-seller__field">Цвет</td>
+          <td class="best-seller__value">«Тиффани»/серый</td>
+        </tr>
+        <tr class="best-seller__table-row">
+          <td class="best-seller__field">Диаметр</td>
+          <td class="best-seller__value">25 см</td>
+        </tr>
+        <tr class="best-seller__table-row">
+          <td class="best-seller__field">Высота</td>
+          <td class="best-seller__value">15 см</td>
+        </tr>
+      </table>
+      <div class="best-seller__img">
+        <img src="#" alt="Вязаные корзинки">
+      </div>
+      <p class="best-seller__price">Цена: 990руб.</p>
+      <a class="best-seller__order btn" href="#">Заказать</a>
+    </article>
+    <section class="features">
+      <h2>Коротко о нас:</h2>
+      <ul class="features__list">
+        <li class="features__item features__item--ecological">Экологически чистые материалы</li>
+        <li class="features__item features__item--price">Скандинавский стиль по российской цене</li>
+        <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
+        <li class="features__item features__item--love">Связано вручную с любовью и умилением</li>
+        <li class="features__item features__item--homeland">Поддержка отечественного производителя</li>
+        <li class="features__item features__item--package">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__container slider">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__items">
+          <blockquote class="reviews__item">
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <cite class="reviews__author">Анастасия Красильникова</cite>
+            <a class="reviews__link" href="#">@misssssiskras</a>
+          </blockquote>
+          <!-- Ещё слайды -->
+        </div>
+        <button class="reviews__btn reviews__btn--prev" type="button">Следующий</button>
+        <button class="reviews__btn reviews__btn--next" type="button">Предыдущий</button>
+        <a class="reviews__write" href="#">Написать</a>
+      </div>
+    </section>
+    <section class="contacts">
+      <p class="contacts__item">
+        <span class="contacts__field">email</span>
+        <span class="contacts__text">info@mimimishkashop.ru</span>
+      </p>
+      <p class="contacts__item">
+        <span class="contacts__field">адрес</span>
+        <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+      </p>
+      <div class="map"></div>
+      <a class="contacts__write btn" href="#"></a>
+    </section>
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <div class="main-footer__social">
+          <ul class="social-links">
+            <li class="social-link">Мы в Инстаграмме</li>
+            <li class="social-link">Мы в Фейсбуке</li>
+            <li class="social-link">Мы в Твиттере</li>
           </ul>
         </div>
-      </nav>
-    </header>
+        <div class="copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="#">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
