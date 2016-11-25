@@ -20,19 +20,19 @@
               <a class="main-menu__link">Каталог товаров</a>
             </li>
             <li class="main-menu__item">
-              <a href="form.html" class="main-menu__link">Вязание на заказ</a>
+              <a class="main-menu__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-menu__item">
-              <a href="#" class="main-menu__link main-menu__link--search">Поиск по сайту</a>
+              <a class="main-menu__link main-menu__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="main-menu__item cart">
-              <a href="#" class="main-menu__link main-menu__link--cart">Корзина: <span class="cart__state">пока пуста</span></a>
+              <a class="main-menu__link main-menu__link--cart" href="#">Корзина: <span class="cart__state">пока пуста</span></a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="main-header__title-box">
-        <h1 class="main-header__title">Каталог товаров</h1>
+        <h2 class="main-header__title">Каталог товаров</h2>
       </div>
     </header>
     <section class="catlog">
@@ -71,7 +71,7 @@
       </article>
     </section>
     <section class="production">
-      <h2 class="production__title">Процесс производства</h2>
+      <h3 class="production__title">Процесс производства</h3>
       <video src="#"></video>
       <p class="production__description">
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -86,28 +86,28 @@
           <li class="social-link">Мы в Твиттере</li>
         </ul>
       </div>
-      <div class="copyright">
+      <div class="main-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="#">HTML Academy</a>
       </div>
     </footer>
-    <form class="add-cart" action="#" method="get">
-      <h2 class="add-cart__title">Добавить в корзину</h2>
-      <p class="add-cart__description">Выберите размер:</p>
-      <div class="add-cart__sizes">
-        <p class="add-cart__size">
-          <input class="add-cart__radio" id="s-size" type="radio" name="size" value="s">
-          <label class="add-cart__label" for="s-size">S</label>
+    <form class="to-cart" action="#" method="get">
+      <div class="to-cart__title">Добавить в корзину</div>
+      <p class="to-cart__description">Выберите размер:</p>
+      <div class="to-cart__sizes">
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s">
+          <label class="to-cart__label" for="s-size">S</label>
         </p>
-        <p class="add-cart__size">
-          <input class="add-cart__radio" id="m-size" type="radio" name="size" value="m">
-          <label class="add-cart__label" for="m-size">M</label>
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
+          <label class="to-cart__label" for="m-size">M</label>
         </p>
-        <p class="add-cart__size">
-          <input class="add-cart__radio" id="l-size" type="radio" name="size" value="l">
-          <label class="add-cart__label" for="l-size">L</label>
+        <p class="to-cart__size">
+          <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
+          <label class="to-cart__label" for="l-size">L</label>
         </p>
-        <button class="add-cart__submit" type="submit">Добавить</button>
+        <button class="to-cart__submit" type="submit">Добавить</button>
       </div>
     </form>
   </body>
