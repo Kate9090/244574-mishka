@@ -12,7 +12,7 @@
         <img class="logo__img" src="#" alt="Мишка">
       </a>
       <nav class="main-menu main-menu--closed main-menu--nojs">
-        <button class="main-menu__toggle main-menu__toggle--open">Открыть меню</button>
+        <button class="main-menu__toggle main-menu__toggle--close">Открыть меню</button>
         <div class="main-menu__conteiner">
           <ul class="main-menu__list">
             <li class="main-menu__item">
@@ -86,9 +86,28 @@
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text">Разработано:</p>
+        <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="#">HTML Academy</a>
       </div>
     </footer>
+    <form class="add-cart" action="#" method="get">
+      <h2 class="add-cart__title">Добавить в корзину</h2>
+      <p class="add-cart__description">Выберите размер:</p>
+      <div class="add-cart__sizes">
+        <p class="add-cart__size">
+          <input class="add-cart__radio" id="s-size" type="radio" name="size" value="s">
+          <label class="add-cart__label" for="s-size">S</label>
+        </p>
+        <p class="add-cart__size">
+          <input class="add-cart__radio" id="m-size" type="radio" name="size" value="m">
+          <label class="add-cart__label" for="m-size">M</label>
+        </p>
+        <p class="add-cart__size">
+          <input class="add-cart__radio" id="l-size" type="radio" name="size" value="l">
+          <label class="add-cart__label" for="l-size">L</label>
+        </p>
+        <button class="add-cart__submit" type="submit">Добавить</button>
+      </div>
+    </form>
   </body>
 </html>

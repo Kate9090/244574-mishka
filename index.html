@@ -8,34 +8,32 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__container">
-        <a class="logo">
-          <img class="logo__img" src="#" alt="Мишка">
-        </a>
-        <nav class="main-menu main-menu--closed main-menu--nojs">
-          <button class="main-menu__toggle main-menu__toggle--open">Открыть меню</button>
-          <div class="main-menu__conteiner">
-            <ul class="main-menu__list">
-              <li class="main-menu__item">
-                <a href="#" class="main-menu__link">Каталог товаров</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="#" class="main-menu__link">Вязание на заказ</a>
-              </li>
-              <li class="main-menu__item">
-                <a href="#" class="main-menu__link main-menu__link--search">Поиск по сайту</a>
-              </li>
-              <!-- Тут добавил еще один независимый блок cart, чтобы на него навесить логику смену состояния корзины,
-                  может еще где-то пригодится.
-                  А внешний вид конкретно для меню - это main-menu__item и main-menu__link.
-              -->
-              <li class="main-menu__item cart">
-                <a href="#" class="main-menu__link main-menu__link--cart">Корзина: <span class="cart__state">пока пуста</span></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <a class="logo">
+        <img class="logo__img" src="#" alt="Мишка">
+      </a>
+      <nav class="main-menu main-menu--closed main-menu--nojs">
+        <button class="main-menu__toggle main-menu__toggle--close">Открыть меню</button>
+        <div class="main-menu__conteiner">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Каталог товаров</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link">Вязание на заказ</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" class="main-menu__link main-menu__link--search">Поиск по сайту</a>
+            </li>
+            <!-- Тут добавил еще один независимый блок cart, чтобы на него навесить логику смену состояния корзины,
+                может еще где-то пригодится.
+                А внешний вид конкретно для меню - это main-menu__item и main-menu__link.
+            -->
+            <li class="main-menu__item cart">
+              <a href="#" class="main-menu__link main-menu__link--cart">Корзина: <span class="cart__state">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section class="promo">
       <div class="promo__header">
@@ -129,10 +127,29 @@
           </ul>
         </div>
         <div class="copyright">
-          <p class="copyright__text">Разработано:</p>
+          <span class="copyright__text">Разработано:</span>
           <a class="copyright__link" href="#">HTML Academy</a>
         </div>
       </div>
     </footer>
+    <form class="add-cart" action="#" method="get">
+      <h2 class="add-cart__title">Добавить в корзину</h2>
+      <p class="add-cart__description">Выберите размер:</p>
+      <div class="add-cart__sizes">
+        <p class="add-cart__size">
+          <input class="add-cart__radio" id="s-size" type="radio" name="size" value="s">
+          <label class="add-cart__label" for="s-size">S</label>
+        </p>
+        <p class="add-cart__size">
+          <input class="add-cart__radio" id="m-size" type="radio" name="size" value="m">
+          <label class="add-cart__label" for="m-size">M</label>
+        </p>
+        <p class="add-cart__size">
+          <input class="add-cart__radio" id="l-size" type="radio" name="size" value="l">
+          <label class="add-cart__label" for="l-size">L</label>
+        </p>
+        <button class="add-cart__submit" type="submit">Добавить</button>
+      </div>
+    </form>
   </body>
 </html>
