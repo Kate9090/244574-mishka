@@ -8,8 +8,17 @@
   </head>
   <body>
     <header class="main-header">
+        <!-- Для main-header будет задан серый фон,
+             на главной он не виден,
+             но пригодится на страницах с заголовком
+        -->
       <div class="main-header__top">
+        <!-- Для main-header__top будет задан белый фон,
+            это верхняя часть страницы,
+            где расположаться лого и меню
+        -->
         <div class="main-header__container">
+          <!-- Контейнер сцентрует содержимое main-header__top-->
           <a class="logo">
             <img class="logo__img" src="http://placehold.it/86x35" alt="Мишка" width="86" height="35">
           </a>
@@ -132,27 +141,25 @@
     </footer>
 
     <div class="modal modal--open">
-      <div class="modal__container">
-        <div class="modal__title">Добавить в корзину</div>
-        <p class="modal__description">Выберите размер:</p>
-        <form class="to-cart" action="#" method="get">
-          <div class="to-cart__sizes">
-            <p class="to-cart__size">
-              <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s" checked>
-              <label class="to-cart__label" for="s-size">S</label>
-            </p>
-            <p class="to-cart__size">
-              <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
-              <label class="to-cart__label" for="m-size">M</label>
-            </p>
-            <p class="to-cart__size">
-              <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
-              <label class="to-cart__label" for="l-size">L</label>
-            </p>
-          </div>
-          <button class="to-cart__submit btn" type="submit">Добавить</button>
-        </form>
-      </div>
+      <div class="modal__title">Добавить в корзину</div>
+      <p class="modal__description">Выберите размер:</p>
+      <form class="to-cart" action="#" method="get">
+        <div class="to-cart__sizes">
+          <p class="to-cart__size">
+            <input class="to-cart__radio" id="s-size" type="radio" name="size" value="s" checked>
+            <label class="to-cart__label" for="s-size">S</label>
+          </p>
+          <p class="to-cart__size">
+            <input class="to-cart__radio" id="m-size" type="radio" name="size" value="m">
+            <label class="to-cart__label" for="m-size">M</label>
+          </p>
+          <p class="to-cart__size">
+            <input class="to-cart__radio" id="l-size" type="radio" name="size" value="l">
+            <label class="to-cart__label" for="l-size">L</label>
+          </p>
+        </div>
+        <button class="to-cart__submit btn" type="submit">Добавить</button>
+      </form>
     </div>
   </body>
 </html>
