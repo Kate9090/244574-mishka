@@ -9,7 +9,18 @@
 }
 
 .catalog-item__price {
-  font-size: 15px;
   font-weight: bold;
+  font-size: 15px;
   color: $color-text-title;
+}
+
+.catalog-item__cart {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  background-image: url("../img/icon-cart.svg");
 }

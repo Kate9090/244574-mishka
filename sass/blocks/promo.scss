@@ -1,27 +1,35 @@
 .promo {
-  background-image: url("../img/hero-mobile@1x.jpg");
   padding-top: 75px;
+
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
 
   @include outline;
 }
 
 .promo__title {
-  padding: 0;
+  width: 244px;
   margin: 0;
   margin-bottom: 125px;
-  color: $color-text-title;
+  padding: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
+  color: $color-text-title;
 }
 
 .promo__link {
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
+
+  font-weight: bold;
   font-size: 19px;
-  font-weight: bold;;
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none;;
 
   &--interior {
     background-color: $color-cyan;
