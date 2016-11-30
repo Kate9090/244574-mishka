@@ -1,12 +1,17 @@
 .main-header {
   background-color: $color-background;
+
+  @include outline;
 }
 
 .main-header__top {
+  padding-top: 22px;
   background-color: #ffffff;
 }
 
 .main-header__title {
+  margin: 0;
+  padding: 0;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;

@@ -1,4 +1,10 @@
+.contacts {
+  padding-top: 45px;
+  @include outline;
+}
+
 .contacts__title {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   color: $color-text-title

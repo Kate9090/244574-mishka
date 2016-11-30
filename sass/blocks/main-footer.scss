@@ -1,5 +1,7 @@
 .main-footer {
+  padding-top: 30px;
   background-color: $color-background;
+  @include outline;
 }
 
 .main-footer__copyright-text {

@@ -1,8 +1,21 @@
+.features {
+  padding-top: 32px;
+
+  @include outline;
+}
+
 .features__title {
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   color: $color-text-title;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .features__item {

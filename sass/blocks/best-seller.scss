@@ -1,4 +1,12 @@
+.best-seller {
+  padding-top: 32px;
+
+  @include outline;
+}
+
 .best-seller__title {
+  padding: 0;
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;

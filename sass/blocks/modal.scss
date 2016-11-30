@@ -1,3 +1,9 @@
+.modal {
+  padding-top: 35px;
+
+  @include outline;
+}
+
 .modal__title {
   font-size: 25px;
   line-height: 30px;

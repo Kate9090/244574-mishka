@@ -11,3 +11,7 @@
   line-height: 18px;
   font-weight: normal;
 }
+
+@mixin outline {
+  outline: 2px solid $color-cyan;
+}

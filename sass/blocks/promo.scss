@@ -1,8 +1,14 @@
 .promo {
   background-image: url("../img/hero-mobile@1x.jpg");
+  padding-top: 75px;
+
+  @include outline;
 }
 
 .promo__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 125px;
   color: $color-text-title;
   font-weight: bold;
   font-size: 27px;
@@ -10,6 +16,8 @@
 }
 
 .promo__link {
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 19px;
   font-weight: bold;;
   color: #ffffff;

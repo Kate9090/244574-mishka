@@ -1,0 +1,9 @@
+.catalog {
+  padding-top: 30px;
+
+  @include outline;
+}
+
+.catalog-item {
+  margin-bottom: 30px;
+}
