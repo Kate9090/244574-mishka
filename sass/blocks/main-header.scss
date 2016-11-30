@@ -5,3 +5,10 @@
 .main-header__top {
   background-color: #ffffff;
 }
+
+.main-header__title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-text-title;
+}

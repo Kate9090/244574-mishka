@@ -2,9 +2,21 @@
   background-image: url("../img/hero-mobile@1x.jpg");
 }
 
+.promo__title {
+  color: $color-text-title;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
 .promo__link {
+  font-size: 19px;
+  font-weight: bold;;
+  color: #ffffff;
+  text-decoration: none;
+
   &--interior {
-    background-color: #63d1bb;
+    background-color: $color-cyan;
   }
 
   &--toys {

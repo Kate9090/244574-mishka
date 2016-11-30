@@ -1,0 +1,26 @@
+.best-seller__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $color-text-title;
+}
+
+.best-seller__state {
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-cyan;
+}
+
+.best-seller__description {
+  font-size: 15px;
+}
+
+.best-seller__table-cell {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.best-seller__price {
+  font-weight: bold;
+}

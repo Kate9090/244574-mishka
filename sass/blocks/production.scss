@@ -4,3 +4,14 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
+
+.production__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $color-text-title;
+}
+
+.production__description {
+  font-size: 13px;
+}

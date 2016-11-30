@@ -1,0 +1,13 @@
+@mixin form-title {
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-cyan;
+  text-transform: uppercase;
+}
+
+@mixin placeholder-text {
+  color: $color-text-placeholder;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+}
