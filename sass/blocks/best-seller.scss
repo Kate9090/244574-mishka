@@ -1,0 +1,50 @@
+.best-seller {
+  padding-top: 32px;
+
+  @include outline;
+}
+
+.best-seller__container {
+  @include container;
+}
+
+.best-seller__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-text-title;
+}
+
+.best-seller__state {
+  font-weight: bold;
+  line-height: 16px;
+  color: $color-cyan;
+  text-transform: uppercase;
+}
+
+.best-seller__description {
+  font-size: 15px;
+}
+
+.best-seller__table {
+  width: 100%;
+  margin-bottom: 27px;
+
+  border-collapse: collapse;
+}
+
+.best-seller__table-row {
+  border-bottom: 1px solid #ececec;
+}
+
+.best-seller__table-cell {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.best-seller__price {
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+.catalog-item__title {
+  font-weight: bold;
+  color: $color-text-title;
+}
+
+.catalog-item__description {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog-item__price {
+  font-weight: bold;
+  font-size: 15px;
+  color: $color-text-title;
+}
+
+.catalog-item__cart {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  background-image: url("../img/icon-cart.svg");
+}

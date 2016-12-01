@@ -1,0 +1,31 @@
+.features {
+  padding-top: 32px;
+
+  @include outline;
+}
+
+.features__container {
+  @include container;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-text-title;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.features__item {
+  font-weight: bold;
+  color: $color-text-title;
+}

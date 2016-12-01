@@ -1,0 +1,39 @@
+.order-form {
+  padding-top: 30px;
+}
+
+.order-form__section {
+  margin-bottom: 30px;
+}
+
+.order-form__title {
+  @include form-title;
+}
+
+.order-form__label {
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-text-title;
+  font-weight: bold;
+}
+
+.order-form__text::-webkit-input-placeholder {
+  @include placeholder-text;
+}
+
+.order-form__text::-moz-placeholder {
+  @include placeholder-text;
+}
+
+.order-form__text:-ms-input-placeholder {
+  @include placeholder-text;
+}
+
+.order-form__caption {
+  @include form-title;
+}
+
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+}

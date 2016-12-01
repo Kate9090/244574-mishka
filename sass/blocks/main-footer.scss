@@ -1,0 +1,31 @@
+.main-footer {
+  margin-top: 39px;
+  padding-top: 30px;
+
+  background-color: $color-background;
+
+  @include outline;
+}
+
+.main-footer__container {
+  @include container;
+}
+
+.main-footer__copyright-text {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-text-title;
+}
+
+.main-footer__copyright-link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+}

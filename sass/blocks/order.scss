@@ -1,0 +1,15 @@
+.order {
+  padding-top: 27px;
+
+  @include outline;
+}
+
+.order__container {
+  @include container;
+}
+
+.order__description {
+  margin: 0;
+
+  font-size: 13px;
+}

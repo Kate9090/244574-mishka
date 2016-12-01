@@ -1,0 +1,23 @@
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 260px;
+}
+
+@mixin form-title {
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-cyan;
+  text-transform: uppercase;
+}
+
+@mixin placeholder-text {
+  color: $color-text-placeholder;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+@mixin outline {
+  outline: 2px solid $color-cyan;
+}

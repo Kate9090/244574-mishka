@@ -1,0 +1,30 @@
+.contacts {
+  padding-top: 45px;
+
+  @include outline;
+}
+
+.contacts__container {
+  @include container;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text-title;
+}
+
+.contacts__field {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-text-ordinary;
+  text-decoration: none;
+}
