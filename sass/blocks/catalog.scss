@@ -4,6 +4,10 @@
   @include outline;
 }
 
+.catalog__container {
+  @include container;
+}
+
 .catalog-item {
   margin-bottom: 30px;
 }

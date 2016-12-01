@@ -14,6 +14,10 @@
   background-repeat: no-repeat;
 }
 
+.production__container {
+  @include container;
+}
+
 .production__play-btn {
   position: absolute;
   top: 50%;

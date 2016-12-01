@@ -1,0 +1,40 @@
+.to-cart__sizes {
+  margin-bottom: 25px;
+
+  font-size: 0;
+}
+
+.to-cart__size {
+  display: inline-block;
+  margin-left: 7px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.to-cart__radio {
+  display: none;
+}
+
+.to-cart__label {
+  display: block;
+  width: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+
+  border: 2px solid $color-cyan;
+  cursor: pointer;
+}
+
+.to-cart__submit {
+  color: #ffffff;
+
+  background-color: $color-cyan;
+  border: 0;
+}
