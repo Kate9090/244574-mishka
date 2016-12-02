@@ -1,6 +1,7 @@
 .promo {
   padding-top: 90px;
 
+  background-color: #fafafa;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -76,5 +77,12 @@
       background-image: url("../img/icon-toy.svg");
       background-repeat: no-repeat;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .promo__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 }

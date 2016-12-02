@@ -12,11 +12,6 @@
   @include clearfix;
 }
 
-.main-header__container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .main-header__title {
   margin: 0;
   padding: 0;
@@ -31,11 +26,23 @@
 }
 
 @media (min-width: 768px) {
-  .main-header {
-    width: 668px;
-  }
 
   .main-header__top {
     padding: 0;
+  }
+
+  .main-header__container {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .main-header__container {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

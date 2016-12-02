@@ -1,10 +1,14 @@
+.main-menu {
+  position: relative;
+}
+
 .main-menu__container {
   display: block;
 }
 
 .main-menu__toggle {
   position: absolute;
-  top: 29px;
+  top: -48px;
   right: 30px;
 
   font-size: 0;
@@ -86,30 +90,88 @@
 }
 
 @media (min-width: 768px) {
+
+  .main-menu {
+    &::after {
+      content: "Бесплатная доставка по России";
+      position: absolute;
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      right: 0;
+      top: 100px;
+    }
+  }
+
   .main-menu__list--categories {
     position: absolute;
-    left: -1000px;
-    top: 200px;
+    width: 435px;
+    left: 0;
+    top: 100px;
+  }
+
+  .main-menu__list--categories .main-menu__link {
+    padding: 0;
+    margin-right: 36px;
+    font-size: 15px;
   }
 
   .main-menu__list--controls {
-    width: 400px;
+    width: 348px;
     float: right;
+    text-align: right;
+    font-size: 0;
   }
 
   .main-menu__item {
     display: inline-block;
     vertical-align: top;
     border: 0;
-    border-left: 1px solid #ececec;;
   }
 
   .main-menu__link--search {
     font-size: 0;
+    padding-right: 0;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+  }
+
+  .main-menu__link--cart {
+    padding-right: 0;
+    font-size: 17px;
   }
 
   .main-menu__toggle {
     display: none;
   }
+}
 
+@media (min-width: 1150px) {
+  .main-menu__list--categories {
+    position: static;
+    width: 405px;
+    float: left;
+    font-size: 17px;
+    font-size: 0;
+  }
+
+  .main-menu__list--categories .main-menu__link {
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .main-menu__list--categories .main-menu__link--catalog {
+    padding-left: 0;
+  }
+
+
+  .main-menu__list--categories .main-menu__item {
+    &:nth-child(1) {
+      border-right: 1px solid #ececec;
+      padding-left: 0;
+    }
+  }
 }
