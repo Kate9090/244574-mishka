@@ -1,7 +1,7 @@
 .main-header {
+  position: relative;
   background-color: $color-background;
 
-  @include outline;
 }
 
 .main-header__top {
@@ -9,10 +9,10 @@
 
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  @include clearfix;
 }
 
 .main-header__container {
-  width: 260px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -28,4 +28,14 @@
   line-height: 30px;
   text-align: center;
   color: $color-text-title;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    width: 668px;
+  }
+
+  .main-header__top {
+    padding: 0;
+  }
 }

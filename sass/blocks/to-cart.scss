@@ -17,6 +17,10 @@
   display: none;
 }
 
+.to-cart__radio:checked ~ .to-cart__label {
+  border: 2px solid $color-cyan;
+}
+
 .to-cart__label {
   display: block;
   width: 78px;
@@ -28,7 +32,7 @@
   line-height: 16px;
   text-align: center;
 
-  border: 2px solid $color-cyan;
+  border: 2px solid #ececec;
   cursor: pointer;
 }
 

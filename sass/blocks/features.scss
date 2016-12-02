@@ -26,6 +26,80 @@
 }
 
 .features__item {
+  position: relative;
+
+  margin-bottom: 35px;
+  padding-top: 50px;
+
   font-weight: bold;
   color: $color-text-title;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    display: block;
+  }
+
+  &--ecological {
+    &::after {
+      width: 32px;
+      height: 37px;
+
+      background-image: url("../img/icon-feature-1.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--price {
+    &::after {
+      width: 34px;
+      height: 34px;
+
+      background-image: url("../img/icon-feature-2.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--likes {
+    &::after {
+      width: 47px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-3.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--love {
+    &::after {
+      width: 54px;
+      height: 23px;
+
+      background-image: url("../img/icon-feature-4.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--homeland {
+    &::after {
+      width: 33px;
+      height: 28px;
+
+      background-image: url("../img/icon-feature-5.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--package {
+    &::after {
+      width: 33px;
+      height: 33px;
+
+      background-image: url("../img/icon-feature-6.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }

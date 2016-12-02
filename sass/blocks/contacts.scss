@@ -17,14 +17,32 @@
   color: $color-text-title;
 }
 
+.contacts__item {
+  padding-bottom: 30px;
+
+  font-size: 0;
+}
+
 .contacts__field {
+  display: inline-block;
+  width: 79px;
+
   font-size: 15px;
   line-height: 30px;
+  vertical-align: top;
 }
 
 .contacts__text {
+  display: inline-block;
+  width: 181px;
+
   font-size: 15px;
   line-height: 30px;
+  vertical-align: top;
   color: $color-text-ordinary;
   text-decoration: none;
+
+  &--address {
+    width: 145px;
+  }
 }
