@@ -56,6 +56,8 @@
 }
 
 .best-seller__image {
+  width: 260px;
+  height: 316px;
   margin-bottom: 20px;
 }
 
@@ -64,4 +66,52 @@
 
   font-weight: bold;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .best-seller {
+    padding-top: 55px;
+  }
+
+  .best-seller__container {
+    position: relative;
+  }
+
+  .best-seller__title {
+    padding-right: 167px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .best-seller__state {
+    position: absolute;
+    top: 15px;
+    right: 0;
+
+    width: 125px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .best-seller {
+    position: relative;
+  }
+
+  .best-seller__image {
+    position: absolute;
+    top: 75px;
+    right: 0;
+  }
+
+  .best-seller__table {
+    width: 290px;
+    padding-right: 410px;
+  }
+
+  .best-seller__description {
+    padding-right: 410px;
+  }
 }

@@ -10,9 +10,9 @@
 .promo__title {
   box-sizing: border-box;
   margin: 0;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
+  margin-left: auto;
   padding: 0;
   padding-right: 8px;
   padding-left: 8px;
@@ -24,16 +24,12 @@
   color: $color-text-title;
 }
 
-.promo__categories {
-
-}
-
 .promo__link {
   position: relative;
 
   display: block;
   padding-top: 25px;
-  padding-right: 30px;
+  padding-right: 100px;
   padding-bottom: 25px;
   padding-left: 30px;
 
@@ -84,5 +80,19 @@
   .promo__title {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .promo__categories {
+    @include container;
+    font-size: 0;
+  }
+
+  .promo__link {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 19px;
+    width: 50%;
+    padding-bottom: 38px;
+    padding-top: 30px;
   }
 }
