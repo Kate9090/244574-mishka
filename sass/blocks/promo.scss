@@ -100,4 +100,8 @@
       background-repeat: no-repeat;
     }
   }
+
+  @media ($tablet) {
+    width: auto;
+  }
 }

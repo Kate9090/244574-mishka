@@ -14,6 +14,17 @@
   font-size: 25px;
   line-height: 30px;
   color: $color-text-title;
+
+  @media ($tablet) {
+    margin-top: 65px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($desktop) {
+    padding-left: 170px;
+  }
 }
 
 .features__list {
@@ -21,6 +32,12 @@
   padding: 0;
 
   list-style-type: none;
+  font-size: 0;
+
+  @media ($desktop) {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
 }
 
 .features__item {
@@ -30,6 +47,7 @@
   padding-top: 50px;
 
   font-weight: bold;
+  font-size: 17px;
   color: $color-text-title;
 
   &::after {
@@ -99,5 +117,12 @@
       background-image: url("../img/icon-feature-6.svg");
       background-repeat: no-repeat;
     }
+  }
+
+  @media ($tablet) {
+    display: inline-block;
+    width: 334px;
+
+    font-size: 20px;
   }
 }
