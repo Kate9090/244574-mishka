@@ -6,9 +6,66 @@
   display: block;
 }
 
+.main-menu__list--categories {
+  @media ($tablet) {
+    position: absolute;
+    width: 435px;
+    left: 0;
+    top: 100px;
+  }
+
+  @media ($desktop) {
+    position: static;
+    width: 405px;
+    float: left;
+    font-size: 17px;
+    font-size: 0;
+  }
+}
+
+.main-menu__list--categories .main-menu__link {
+  @media ($tablet) {
+    padding: 0;
+    margin-right: 36px;
+    font-size: 15px;
+  }
+
+  @media ($desktop) {
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    margin-right: 0;
+  }
+
+  &--catalog {
+    @media ($desktop) {
+      padding-left: 0;
+    }
+  }
+}
+
+.main-menu__list--categories .main-menu__link {
+  @media ($desktop) {
+    &:nth-child(1) {
+      border-right: 1px solid #ececec;
+      padding-left: 0;
+    }
+  }
+}
+
+.main-menu__list--controls {
+  @media ($tablet) {
+    width: 348px;
+    float: right;
+    text-align: right;
+    font-size: 0;
+  }
+}
+
 .main-menu__toggle {
   position: absolute;
-  top: -48px;
+  top: -54px;
   right: 30px;
 
   font-size: 0;
@@ -31,6 +88,10 @@
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
   }
+
+  @media ($tablet) {
+    display: none;
+  }
 }
 
 .main-menu__list {
@@ -44,6 +105,12 @@
   text-align: left;
 
   border-top: 1px solid #ececec;
+
+  @media ($tablet) {
+    display: inline-block;
+    vertical-align: top;
+    border: 0;
+  }
 }
 
 .main-menu__link {
@@ -51,19 +118,27 @@
 
   display: block;
   padding-top: 30px;
-  padding-right: 20px;
+  padding-right: 30px;
   padding-bottom: 30px;
-  padding-left: 77px;
+  padding-left: 30px;
 
   font-weight: bold;
   color: $color-text-title;
   text-decoration: none;
+}
+
+.main-menu__align-center {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 47px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 33px;
-    left: 30px;
+    top: 5px;
+    left: 0px;
 
     opacity: 0.2;
   }
@@ -76,6 +151,13 @@
       background-image: url("../img/icon-search.svg");
       background-repeat: no-repeat;
     }
+
+    @media ($tablet) {
+      font-size: 0;
+      padding-right: 0;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
   }
 
   &--cart {
@@ -86,92 +168,32 @@
       background-image: url("../img/icon-cart.svg");
       background-repeat: no-repeat;
     }
-  }
-}
 
-@media (min-width: 768px) {
-
-  .main-menu {
-    &::after {
-      content: "Бесплатная доставка по России";
-      position: absolute;
-      font-family: "Open Sans", Arial, sans-serif;
-      font-size: 15px;
-      line-height: 24px;
-      right: 0;
-      top: 100px;
+    @media ($tablet) {
+      padding-right: 0;
+      font-size: 17px;
     }
   }
 
-  .main-menu__list--categories {
-    position: absolute;
-    width: 435px;
-    left: 0;
-    top: 100px;
-  }
+  @media ($tablet) {
 
-  .main-menu__list--categories .main-menu__link {
-    padding: 0;
-    margin-right: 36px;
-    font-size: 15px;
   }
+}
 
-  .main-menu__list--controls {
-    width: 348px;
-    float: right;
-    text-align: right;
-    font-size: 0;
-  }
+.extra-nav {
+  display: none;
 
-  .main-menu__item {
-    display: inline-block;
-    vertical-align: top;
-    border: 0;
-  }
-
-  .main-menu__link--search {
-    font-size: 0;
-    padding-right: 0;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
-  }
-
-  .main-menu__link--cart {
-    padding-right: 0;
-    font-size: 17px;
-  }
-
-  .main-menu__toggle {
+  @media ($tablet) {
     display: none;
+    float: left;
   }
 }
 
-@media (min-width: 1150px) {
-  .main-menu__list--categories {
-    position: static;
-    width: 405px;
-    float: left;
-    font-size: 17px;
-    font-size: 0;
-  }
+.delivery-info {
+  display: none;
 
-  .main-menu__list--categories .main-menu__link {
-    padding-left: 35px;
-    padding-top: 30px;
-    padding-right: 35px;
-    padding-bottom: 30px;
-    margin-right: 0;
-  }
-
-  .main-menu__list--categories .main-menu__link--catalog {
-    padding-left: 0;
-  }
-
-
-  .main-menu__list--categories .main-menu__item {
-    &:nth-child(1) {
-      border-right: 1px solid #ececec;
-      padding-left: 0;
-    }
+  @media ($tablet) {
+    display: none;
+    float: right;
   }
 }

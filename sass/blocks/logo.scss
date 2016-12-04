@@ -5,17 +5,13 @@
   margin-right: auto;
   margin-bottom: 27px;
   margin-left: auto;
-}
 
-@media (min-width: 768px) {
-  .logo {
+  @media ($tablet) {
     float: left;
     margin-top: 23px;
   }
-}
 
-@media (min-width: 1150px) {
-  .logo {
+  @media ($desktop) {
     position: absolute;
     top: 23px;
     left: 50%;

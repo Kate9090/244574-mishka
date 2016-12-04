@@ -4,6 +4,12 @@
   background-color: $color-background;
 }
 
+.main-header__container {
+  @media ($tablet) {
+    @include container;
+  }
+}
+
 .main-header__top {
   padding-top: 22px;
 
@@ -11,6 +17,10 @@
   border-bottom: 1px solid #ececec;
 
   @include clearfix;
+
+  @media ($tablet) {
+    padding: 0;
+  }
 }
 
 .main-header__title {
@@ -24,14 +34,4 @@
   line-height: 30px;
   text-align: center;
   color: $color-text-title;
-}
-
-@media (min-width: 768px) {
-  .main-header__top {
-    padding: 0;
-  }
-
-  .main-header__container {
-    @include container;
-  }
 }
