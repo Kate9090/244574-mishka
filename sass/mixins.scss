@@ -1,7 +1,24 @@
 @mixin container {
+  width: 260px;
   margin-right: auto;
   margin-left: auto;
-  width: 260px;
+
+  @media (min-width: 768px) {
+    width: 668px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin form-title {
@@ -12,12 +29,9 @@
 }
 
 @mixin placeholder-text {
-  color: $color-text-placeholder;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
   font-size: 17px;
   line-height: 18px;
-  font-weight: normal;
-}
-
-@mixin outline {
-  outline: 2px solid $color-cyan;
+  color: $color-text-placeholder;
 }

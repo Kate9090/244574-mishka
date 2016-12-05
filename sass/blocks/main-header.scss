@@ -1,7 +1,13 @@
 .main-header {
-  background-color: $color-background;
+  position: relative;
 
-  @include outline;
+  background-color: $color-background;
+}
+
+.main-header__container {
+  @media ($tablet) {
+    @include container;
+  }
 }
 
 .main-header__top {
@@ -9,12 +15,12 @@
 
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-}
 
-.main-header__container {
-  width: 260px;
-  margin-right: auto;
-  margin-left: auto;
+  @include clearfix;
+
+  @media ($tablet) {
+    padding: 0;
+  }
 }
 
 .main-header__title {
@@ -28,4 +34,21 @@
   line-height: 30px;
   text-align: center;
   color: $color-text-title;
+
+  @media ($tablet) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+.main-header__delivery-info {
+  display: none;
+  font-size: 15px;
+
+  @media ($tablet) {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
 }

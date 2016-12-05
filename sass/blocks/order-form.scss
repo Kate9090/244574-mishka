@@ -3,18 +3,58 @@
 }
 
 .order-form__section {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
+  border: 0;
 }
 
 .order-form__title {
   @include form-title;
 }
 
+.order-form__radio {
+  display: none;
+}
+
+.order-form__checkbox {
+  display: none;
+}
+
 .order-form__label {
+  padding-left: 62px;
   font-size: 17px;
   line-height: 18px;
   color: $color-text-title;
   font-weight: bold;
+  display: block;
+
+  &--f-name,
+  &--s-name,
+  &--father-name {
+    padding-left: 0;
+  }
+
+  @media ($tablet) {
+
+  }
+}
+
+.order-form__text {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-right: 10px;
+  border-bottom: 2px solid #000000;
+
+  &--box {
+    resize: none;
+    height: 138px;
+    padding-top: 10px;
+    border: 2px solid #000000;
+  }
 }
 
 .order-form__text::-webkit-input-placeholder {
@@ -34,6 +74,8 @@
 }
 
 .order-form__note {
+  display: block;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 35px;
 }

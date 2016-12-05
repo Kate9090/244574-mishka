@@ -1,7 +1,9 @@
 .features {
   padding-top: 32px;
 
-  @include outline;
+  @media ($tablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .features__container {
@@ -16,6 +18,17 @@
   font-size: 25px;
   line-height: 30px;
   color: $color-text-title;
+
+  @media ($tablet) {
+    margin-top: 65px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($desktop) {
+    padding-left: 170px;
+  }
 }
 
 .features__list {
@@ -23,9 +36,97 @@
   padding: 0;
 
   list-style-type: none;
+  font-size: 0;
+
+  @media ($desktop) {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
 }
 
 .features__item {
+  position: relative;
+
+  margin-bottom: 35px;
+  padding-top: 50px;
+
   font-weight: bold;
+  font-size: 17px;
   color: $color-text-title;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    display: block;
+  }
+
+  &--ecological {
+    &::after {
+      width: 32px;
+      height: 37px;
+
+      background-image: url("../img/icon-feature-1.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--price {
+    &::after {
+      width: 34px;
+      height: 34px;
+
+      background-image: url("../img/icon-feature-2.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--likes {
+    &::after {
+      width: 47px;
+      height: 27px;
+
+      background-image: url("../img/icon-feature-3.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--love {
+    &::after {
+      width: 54px;
+      height: 23px;
+
+      background-image: url("../img/icon-feature-4.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--homeland {
+    &::after {
+      width: 33px;
+      height: 28px;
+
+      background-image: url("../img/icon-feature-5.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--package {
+    &::after {
+      width: 33px;
+      height: 33px;
+
+      background-image: url("../img/icon-feature-6.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media ($tablet) {
+    display: inline-block;
+    width: 334px;
+
+    font-size: 20px;
+  }
 }

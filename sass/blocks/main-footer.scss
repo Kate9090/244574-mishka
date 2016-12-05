@@ -1,17 +1,52 @@
 .main-footer {
   margin-top: 39px;
   padding-top: 30px;
+  padding-bottom: 20px;
 
   background-color: $color-background;
 
-  @include outline;
+  @media ($tablet) {
+    margin-top: 58px;
+    @include clearfix;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  @media ($desktop) {
+    margin-top: 105px;
+  }
 }
 
 .main-footer__container {
   @include container;
 }
 
+.main-footer__logo {
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+    //width: 160px;
+    width: 33%;
+    float: left;
+  }
+}
+
+.main-footer__copyright {
+  text-align: center;
+
+  @media ($tablet) {
+    display: block;
+    //width: 197px;
+    width: 33%;
+    float: left;
+    text-align: right;
+  }
+}
+
 .main-footer__copyright-text {
+  margin-right: 30px;
+
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;

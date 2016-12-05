@@ -1,13 +1,18 @@
 .catalog {
   padding-top: 30px;
 
-  @include outline;
+  font-size: 0;
+
+  @media ($tablet) {
+    padding-top: 80px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 30px;
+    padding-top: 80px;
+  }
 }
 
 .catalog__container {
   @include container;
-}
-
-.catalog-item {
-  margin-bottom: 30px;
 }

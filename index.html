@@ -26,20 +26,27 @@
           <nav class="main-menu main-menu--closed main-menu--nojs">
             <button class="main-menu__toggle main-menu__toggle--opened" type="button">Открыть меню</button>
             <div class="main-menu__container">
-              <ul class="main-menu__list">
+              <ul class="main-menu__list main-menu__list--categories">
                 <li class="main-menu__item">
-                  <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
+                  <a class="main-menu__link main-menu__link--catalog" href="catalog.html"><span class="main-menu__align-center main-menu__align-center--catalog">Каталог товаров</span></a>
                 </li>
                 <li class="main-menu__item">
-                  <a class="main-menu__link" href="form.html">Вязание на заказ</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link main-menu__link--search" href="#">Поиск по сайту</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link main-menu__link--cart" href="#">Корзина: <span>пока пуста</span></a>
+                  <a class="main-menu__link main-menu__link--order" href="form.html"><span class="main-menu__align-center main-menu__align-center--order">Вязание на заказ</span></a>
                 </li>
               </ul>
+              <ul class="main-menu__list main-menu__list--controls">
+                <li class="main-menu__item">
+                  <a class="main-menu__link main-menu__link--search" href="#"><span class="main-menu__align-center main-menu__align-center--search">Поиск по сайту</span></a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link main-menu__link--cart" href="#"><span class="main-menu__align-center main-menu__align-center--cart">Корзина: <span>пока пуста</span></span></a>
+                </li>
+              </ul>
+              <ul class="extra-nav">
+                <li class="extra-nav__item"><a class="extra-nav__link" href="#">Новые поступления</a></li>
+                <li class="extra-nav__item"><a class="extra-nav__link" href="#">Распродажа</a></li>
+              </ul>
+              <div class="main-header__delivery-info">Бесплатная доставка по России</div>
             </div>
           </nav>
         </div>
@@ -48,36 +55,42 @@
     <section class="promo">
       <h1 class="promo__title">Милые штуки ручной<br> работы для дома</h1>
       <div class="promo__categories">
-        <a class="promo__link promo__link--interior" href="#">Предметы интерьера</a>
-        <a class="promo__link promo__link--toys" href="#">Детские игрушки</a>
+        <a class="promo__link promo__link--interior" href="#"><span class="promo__align-center promo__align-center--interior">Предметы<br> интерьера</span></a>
+        <a class="promo__link promo__link--toys" href="#"><span class="promo__align-center promo__align-center--toys">Детские<br> игрушки</span></a>
       </div>
     </section>
     <section class="best-seller">
       <div class="best-seller__container">
-        <h2 class="best-seller__title">Вязаные корзинки</h2>
-        <b class="best-seller__state">Товар недели</b>
-        <p class="best-seller__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="best-seller__table">
-          <tr class="best-seller__table-row">
-            <td class="best-seller__table-cell">Цвет</td>
-            <td class="best-seller__table-cell best-seller__table-cell--value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="best-seller__table-row">
-            <td class="best-seller__table-cell">Диаметр</td>
-            <td class="best-seller__table-cell best-seller__table-cell--value">25 см</td>
-          </tr>
-          <tr class="best-seller__table-row">
-            <td class="best-seller__table-cell">Высота</td>
-            <td class="best-seller__table-cell best-seller__table-cell--value">15 см</td>
-          </tr>
-        </table>
+        <div class="best-seller__header">
+          <h2 class="best-seller__title">Вязаные корзинки</h2>
+          <b class="best-seller__state">Товар недели</b>
+        </div>
+        <div class="best-seller__info">
+          <p class="best-seller__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="best-seller__table">
+            <tr class="best-seller__table-row">
+              <td class="best-seller__table-cell">Цвет</td>
+              <td class="best-seller__table-cell best-seller__table-cell--value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="best-seller__table-row">
+              <td class="best-seller__table-cell">Диаметр</td>
+              <td class="best-seller__table-cell best-seller__table-cell--value">25 см</td>
+            </tr>
+            <tr class="best-seller__table-row">
+              <td class="best-seller__table-cell">Высота</td>
+              <td class="best-seller__table-cell best-seller__table-cell--value">15 см</td>
+            </tr>
+          </table>
+        </div>
         <div class="best-seller__image">
           <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
         </div>
-        <div class="best-seller__price">Цена: 990руб.</div>
-        <a class="best-seller__order btn" href="#">Заказать</a>
+        <div class="best-seller__buy">
+          <div class="best-seller__price">Цена: 990руб.</div>
+          <a class="best-seller__order btn" href="#">Заказать</a>
+        </div>
       </div>
     </section>
     <section class="features">
@@ -85,10 +98,10 @@
         <h2 class="features__title">Коротко о нас:</h2>
         <ul class="features__list">
           <li class="features__item features__item--ecological">Экологически чистые материалы</li>
-          <li class="features__item features__item--price">Скандинавский стиль по российской цене</li>
-          <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="features__item features__item--love">Связано вручную с любовью и умилением</li>
-          <li class="features__item features__item--homeland">Поддержка отечественного производителя</li>
+          <li class="features__item features__item--price">Связано вручную с любовью и умилением</li>
+          <li class="features__item features__item--likes">Скандинавский стиль по российской цене</li>
+          <li class="features__item features__item--love">Поддержка отечественного производителя</li>
+          <li class="features__item features__item--homeland">Увеличивает лайки на фотографиях</li>
           <li class="features__item features__item--package">Поставляется в подарочной упаковке</li>
         </ul>
       </div>
@@ -114,21 +127,26 @@
       <div class="contacts__container">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__item">
-          <span class="contacts__field">email</span>
+          <span class="contacts__field">email:</span>
           <a class="contacts__text" href="#">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__item">
-          <span class="contacts__field">адрес</span>
-          <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <span class="contacts__field">адрес:</span>
+          <span class="contacts__text contacts__text--address">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
         </div>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <div class="map__inner"></div>
+      </div>
       <div class="contacts__container">
         <a class="contacts__write btn" href="#">Напишите нам</a>
       </div>
     </section>
     <footer class="main-footer">
       <div class="main-footer__container">
+        <div class="main-footer__logo">
+          <img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
+        </div>
         <div class="social-links">
           <a class="social-link social-link--insta" href="#">Мы в Инстаграмме</a>
           <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
