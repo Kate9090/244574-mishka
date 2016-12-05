@@ -8,9 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 
   @media ($tablet) {
     @include container;
+    flex-direction: row;
   }
 }
 
@@ -23,7 +25,9 @@
   @include clearfix;
 
   @media ($tablet) {
-    padding: 0;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 85px, #e7e7e7 85px, #e7e7e7 86px, #f9f9f9 86px,  #f9f9f9 100%);
+    padding-top: 0;
+    border-bottom: 0;
   }
 }
 
@@ -39,6 +43,10 @@
   background-color: #ffffff;
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
+
+  @media ($tablet) {
+    display: none;
+  }
 }
 
 .main-header__title {
@@ -61,4 +69,16 @@
 
 .main-header__delivery-info {
   display: none;
+  font-size: 15px;
+
+  @media ($tablet) {
+    display: block;
+    order: 5;
+    width: 40%;
+    text-align: right;
+  }
+
+  @media ($desktop) {
+    flex-grow: 1;
+  }
 }

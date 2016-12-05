@@ -3,4 +3,13 @@
   width: 86px;
   height: 35px;
   margin-bottom: 20px;
+  order: 1;
+
+  @media ($tablet) {
+    margin-top: 15px;
+  }
+
+  @media ($desktop) {
+    order: 2;
+  }
 }
