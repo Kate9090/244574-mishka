@@ -1,4 +1,11 @@
 .map {
+  position: relative;
+  @media ($desktop) {
+    @include container;
+  }
+}
+
+.map__inner {
   height: 457px;
   margin-right: auto;
   margin-bottom: 39px;
@@ -7,4 +14,17 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media ($tablet) {
+    margin-top: 30px;
+    margin-bottom: 56px;
+  }
+
+  @media ($desktop) {
+    position: absolute;
+    width: 525px;
+    height: 457px;
+    right: 0;
+    top: -357px;
+  }
 }

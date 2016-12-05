@@ -1,7 +1,19 @@
+.to-cart {
+  margin: 0 auto;
+
+  @media ($tablet) {
+    width: 350px;
+  }
+}
+
 .to-cart__sizes {
   margin-bottom: 25px;
 
   font-size: 0;
+
+  @media ($tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .to-cart__size {
@@ -34,6 +46,10 @@
 
   border: 2px solid #ececec;
   cursor: pointer;
+
+  @media ($tablet) {
+    width: 108px;
+  }
 }
 
 .to-cart__submit {
@@ -41,4 +57,8 @@
 
   background-color: $color-cyan;
   border: 0;
+
+  @media ($tablet) {
+    width: 350px;
+  }
 }

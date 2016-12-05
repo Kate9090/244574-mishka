@@ -34,4 +34,9 @@
   line-height: 30px;
   text-align: center;
   color: $color-text-title;
+
+  @media ($tablet) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
 }

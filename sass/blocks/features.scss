@@ -1,5 +1,9 @@
 .features {
   padding-top: 32px;
+
+  @media ($tablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .features__container {

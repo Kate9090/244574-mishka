@@ -178,3 +178,9 @@
   font-weight: bold;
   text-align: center;
 }
+
+.best-seller__buy .best-seller__order {
+  @media ($tablet) {
+    width: 292px;
+  }
+}

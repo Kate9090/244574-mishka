@@ -1,9 +1,30 @@
 .reviews {
   padding-top: 20px;
+
+  @media ($tablet) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    margin-bottom: 80px;
+  }
+
+  @media ($desktop) {
+    background: none;
+  }
 }
 
 .reviews__container {
+  position: relative;
+
   @include container;
+
+  @media ($desktop) {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
 }
 
 .reviews__title {
@@ -14,6 +35,19 @@
   font-size: 25px;
   line-height: 30px;
   color: $color-text-title;
+
+  @media ($tablet) {
+    margin-top: 60px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($desktop) {
+    margin-top: 0;
+    padding-top: 80px;
+    padding-left: 175px;
+  }
 }
 
 .reviews__text {
@@ -22,6 +56,15 @@
 
   font-size: 15px;
   line-height: 30px;
+
+  @media ($tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media ($desktop) {
+    padding-left: 175px;
+  }
 }
 
 .reviews__author {
@@ -32,18 +75,45 @@
   font-size: 18px;
   color: $color-text-title;
   font-style: normal;
+
+  @media ($tablet) {
+    padding-bottom: 50px;
+
+    font-size: 17px;
+  }
+
+  @media ($desktop) {
+    padding-bottom: 100px;
+  }
 }
 
 .reviews__author-contact {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+
+  @media ($tablet) {
+    display: block;
+  }
 }
 
 .reviews__btns {
   margin-top: 30px;
   margin-bottom: 30px;
+
   font-size: 0;
+
+  @media ($tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 167px;
+  }
+
+  @media ($desktop) {
+    bottom: 60px;
+  }
 }
 
 .reviews__btn {
@@ -65,5 +135,23 @@
     background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media ($tablet) {
+    border: 0;
+  }
+}
+
+.reviews__write {
+  @media ($tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 175px;
+  }
+
+  @media ($desktop) {
+    top: 80px;
   }
 }
