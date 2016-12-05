@@ -17,7 +17,7 @@
 
     border: 0;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
@@ -90,13 +90,12 @@
   padding-top: 20px;
 
   @media ($tablet) {
-    width: 274px;
+    width: auto;
     min-height: 210px;
     padding-top: 0;
   }
 
   @media ($desktop) {
-    width: 253px;
     min-height: 124px;
   }
 }
@@ -112,12 +111,11 @@
   @include clearfix;
 
   @media ($tablet) {
-    width: 273px;
+    width: auto;
     margin: 0;
   }
 
   @media ($desktop) {
-    width: 253px;
     margin: 0;
   }
 }
