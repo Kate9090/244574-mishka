@@ -1,7 +1,6 @@
 .map {
-  position: relative;
   @media ($desktop) {
-    @include container;
+    order: 1;
   }
 }
 
@@ -21,10 +20,8 @@
   }
 
   @media ($desktop) {
-    position: absolute;
     width: 525px;
     height: 457px;
-    right: 0;
-    top: -357px;
+    margin: 0;
   }
 }

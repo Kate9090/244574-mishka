@@ -2,11 +2,13 @@
   padding-top: 20px;
 
   @media ($tablet) {
+    margin-bottom: 80px;
+    padding-top: 60px;
+
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
-    margin-bottom: 80px;
   }
 
   @media ($desktop) {
@@ -15,15 +17,33 @@
 }
 
 .reviews__container {
+  // for btns
   position: relative;
+
+  display: flex;
+  flex-direction: column;
 
   @include container;
 
+  @media ($tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   @media ($desktop) {
+    padding-top: 80px;
+
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
+  }
+}
+
+.reviews__items {
+  @media ($tablet) {
+    order: 2;
+    margin-top: 50px;
   }
 }
 
@@ -37,15 +57,18 @@
   color: $color-text-title;
 
   @media ($tablet) {
-    margin-top: 60px;
+    flex-grow: 1;
+    width: 334px;
+    margin-bottom: 0;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   @media ($desktop) {
+    font-size: 53px;
+    line-height: 57px;
     margin-top: 0;
-    padding-top: 80px;
     padding-left: 175px;
   }
 }
@@ -63,6 +86,7 @@
   }
 
   @media ($desktop) {
+    width: 775px;
     padding-left: 175px;
   }
 }
@@ -77,6 +101,7 @@
   font-style: normal;
 
   @media ($tablet) {
+    order: 3;
     padding-bottom: 50px;
 
     font-size: 17px;
@@ -107,6 +132,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    //order: 4;
 
     width: 167px;
   }
@@ -144,10 +170,7 @@
 
 .reviews__write {
   @media ($tablet) {
-    position: absolute;
-    top: 0;
-    right: 0;
-
+    order: 1;
     width: 175px;
   }
 
