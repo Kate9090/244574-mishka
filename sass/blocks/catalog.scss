@@ -20,5 +20,6 @@
 
   @media ($desktop) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }

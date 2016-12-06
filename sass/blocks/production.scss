@@ -27,6 +27,7 @@
     width: 682px;
     height: 455px;
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 
@@ -39,6 +40,7 @@
 
   @media ($desktop) {
     height: 455px;
+    border: 1px solid #ececec;
   }
 }
 
@@ -119,8 +121,8 @@
   @media ($desktop) {
     width: 210px;
     margin-bottom: 52px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
