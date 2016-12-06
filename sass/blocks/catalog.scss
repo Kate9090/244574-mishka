@@ -15,4 +15,10 @@
 
 .catalog__container {
   @include container;
+  display: flex;
+  flex-direction: column;
+
+  @media ($desktop) {
+    flex-direction: row;
+  }
 }

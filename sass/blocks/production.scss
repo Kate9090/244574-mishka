@@ -1,6 +1,4 @@
 .production {
-  position: relative;
-
   padding-top: 25px;
 
   @media ($desktop) {
@@ -19,21 +17,29 @@
   background-size: cover;
 
   @media ($tablet) {
-    position: absolute;
-    top: 0;
-
+    order: -1;
     width: 668px;
     height: 455px;
+    margin-bottom: 40px;
   }
 
   @media ($desktop) {
     width: 682px;
     height: 455px;
+    margin-right: 80px;
   }
 }
 
 .production__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   @include container;
+
+  @media ($desktop) {
+    height: 455px;
+  }
 }
 
 .production__play-btn {
@@ -62,8 +68,7 @@
   color: $color-text-title;
 
   @media ($tablet) {
-    margin-bottom: 40px;
-    padding-top: 475px;
+    margin-bottom: 30px;
     padding-right: 42px;
     padding-left: 100px;
 
@@ -86,15 +91,15 @@
   }
 
   @media ($desktop) {
+    width: 210px;
     padding-top: 0;
     padding-top: 80px;
-    padding-right: 50px;
-    padding-left: 762px;
+    padding-right: 0;
+    padding-left: 0;
 
     &::before {
       top: 30px;
-      right: 255px;
-      left: auto;
+      left: 0;
     }
   }
 }
@@ -103,7 +108,7 @@
   font-size: 13px;
 
   @media ($tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-right: 42px;
     padding-left: 42px;
 
@@ -112,8 +117,10 @@
   }
 
   @media ($desktop) {
+    width: 210px;
     margin-bottom: 52px;
-    padding-left: 762px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -125,7 +132,7 @@
   }
 
   @media ($desktop) {
-    width: 266px;
-    margin-left: 762px;
+    width: 230px;
+    margin: 0;
   }
 }

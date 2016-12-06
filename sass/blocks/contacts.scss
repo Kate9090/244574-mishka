@@ -9,8 +9,8 @@
     flex-wrap: wrap;
     height: 457px;
     padding-top: 100px;
-    @include container;
     align-content: space-between;
+    @include container;
   }
 }
 

@@ -15,13 +15,10 @@
   background-size: cover;
 
   @media ($tablet) {
-    margin-top: 30px;
-    margin-bottom: 56px;
   }
 
   @media ($desktop) {
     width: 525px;
-    height: 457px;
     margin: 0;
   }
 }

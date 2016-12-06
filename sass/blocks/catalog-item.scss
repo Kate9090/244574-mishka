@@ -1,19 +1,19 @@
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 
-  border-bottom: 1px solid #c7c7c7;
+  border-bottom: 1px solid #ededed;
 
   @media ($tablet) {
-    display: table;
+    flex-direction: row;
     margin-bottom: 55px;
   }
 
   @media ($desktop) {
-    display: inline-block;
+    flex-direction: column;
     width: 315px;
     margin-right: 51px;
-
-    vertical-align: top;
 
     border: 0;
 
@@ -46,15 +46,11 @@
 
 .catalog-item__img {
   @media ($tablet) {
-    display: table-cell;
     width: 334px;
     height: 334px;
-
-    vertical-align: top;
   }
 
   @media ($desktop) {
-    float: left;
     width: 315px;
     height: 462px;
   }
@@ -67,20 +63,20 @@
 }
 
 .catalog-item__content {
+  display: flex;
+  flex-direction: column;
+
   @media ($tablet) {
-    display: table-cell;
     width: 274px;
     padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
-
-    vertical-align: top;
   }
 
   @media ($desktop) {
     width: 253px;
 
-    border: 1px solid #c7c7c7;
+    border: 1px solid #ededed;
   }
 }
 
@@ -91,37 +87,35 @@
 
   @media ($tablet) {
     width: auto;
-    min-height: 210px;
     padding-top: 0;
   }
 
   @media ($desktop) {
-    min-height: 124px;
   }
 }
 
 .catalog-item__order {
+  display: flex;
+  flex-direction: row;
+
   width: 205px;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
 
-  border-top: 1px solid #c7c7c7;
-
-  @include clearfix;
+  border-top: 1px solid #ededed;
 
   @media ($tablet) {
     width: auto;
     margin: 0;
+    margin-top: auto;
   }
 
   @media ($desktop) {
-    margin: 0;
   }
 }
 
 .catalog-item__price {
-  float: left;
   width: 105px;
 
   font-weight: bold;
@@ -137,13 +131,11 @@
 }
 
 .catalog-item__cart {
-  display: inline-block;
-  float: left;
+  display: block;
   width: 100px;
   height: 19px;
 
   font-size: 0;
-  vertical-align: top;
 
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
