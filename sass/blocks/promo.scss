@@ -34,14 +34,17 @@
 }
 
 .promo__categories {
+  display: flex;
+  flex-direction: column;
+
   @media ($tablet) {
+    flex-direction: row;
     @include container;
     font-size: 0;
   }
 }
 
 .promo__link {
-  display: block;
   padding-top: 25px;
   padding-right: 30px;
   padding-bottom: 25px;
@@ -62,7 +65,6 @@
 
   @media ($tablet) {
     box-sizing: border-box;
-    display: inline-block;
     font-size: 19px;
     width: 50%;
     padding-bottom: 38px;

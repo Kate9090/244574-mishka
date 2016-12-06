@@ -1,6 +1,4 @@
 .best-seller {
-  position: relative;
-
   padding-top: 32px;
 
   @media ($tablet) {
@@ -13,14 +11,20 @@
 }
 
 .best-seller__container {
-  position: relative;
-
   @include container;
 }
 
 .best-seller__header {
+  display: flex;
+  flex-direction: column;
+
   @media ($tablet) {
-    @include clearfix;
+    flex-direction: row;
+    margin-bottom: 45px;
+  }
+
+  @media ($desktop) {
+    transform: translateY(155px);
   }
 }
 
@@ -35,19 +39,15 @@
   color: $color-text-title;
 
   @media ($tablet) {
-    float: left;
-    width: 520px;
+    width: 540px;
+    flex-grow: 1;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   @media ($desktop) {
-    position: relative;
-    top: 120px;
-    z-index: 1;
-
-    padding-left: 175px;
+    order: 1;
   }
 }
 
@@ -58,7 +58,6 @@
   text-transform: uppercase;
 
   @media ($tablet) {
-    float: right;
     width: 125px;
     margin-top: 15px;
 
@@ -66,32 +65,34 @@
   }
 
   @media ($desktop) {
-    position: absolute;
-    top: 115px;
-    left: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 125px;
   }
 }
 
-.best-seller__info {
+.best-seller__content {
   @media ($tablet) {
-    padding-right: 410px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 404px;
+    align-content: space-between;
   }
 
   @media ($desktop) {
-    padding-top: 160px;
-    padding-right: 583px;
+    height: 636px;
     padding-left: 175px;
   }
 }
 
 .best-seller__buy {
   @media ($tablet) {
-    padding-right: 410px;
+    width: 292px;
+    margin-top: auto;
   }
 
   @media ($desktop) {
-    padding-right: 583px;
-    padding-left: 175px;
   }
 }
 
@@ -102,13 +103,16 @@
   font-size: 15px;
 
   @media ($tablet) {
+    width: 292px;
     margin-bottom: 25px;
+    margin-top: 0;
 
     font-size: 17px;
   }
 
   @media ($desktop) {
     margin-bottom: 65px;
+    padding-top: 160px;
   }
 }
 
@@ -118,7 +122,7 @@
   border-collapse: collapse;
 
   @media ($tablet) {
-    width: 290px;
+    width: 292px;
     margin-bottom: 50px;
   }
 
@@ -149,19 +153,12 @@
   margin-bottom: 20px;
 
   @media ($tablet) {
-    position: absolute;
-    top: 75px;
-    right: 0;
-
     width: 333px;
     height: 404px;
+    order: 2;
   }
 
   @media ($desktop) {
-    position: absolute;
-    top: 75px;
-    right: 0;
-
     width: 525px;
     height: 636px;
   }
@@ -177,6 +174,11 @@
 
   font-weight: bold;
   text-align: center;
+
+  @media ($tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .best-seller__buy .best-seller__order {
