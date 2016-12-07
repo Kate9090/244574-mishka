@@ -3,20 +3,50 @@
 }
 
 .order-form__section {
-  margin: 0;
-  padding: 0;
   margin-bottom: 30px;
-  border: 0;
-  border-top: 1px solid $color-cyan;
+
+  @media ($tablet) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .order-form__title {
+  display: flex;
   @include form-title;
-  padding-right: 25px;
+
+  &::after {
+    display: block;
+    content: "";
+    margin-left: 25px;
+    width: 50px;
+
+    flex-grow: 1;
+    height: 1px;
+    background-color: $color-cyan;
+    align-self: center;
+  }
+
+  @media ($tablet) {
+    width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .order-form__line {
   margin-bottom: 30px;
+
+  @media ($tablet) {
+    &--small {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 }
 
 .order-form__radio {
@@ -126,6 +156,10 @@
     padding-top: 10px;
     border: 2px solid #000000;
   }
+
+  @media ($tablet) {
+    width: 500px;
+  }
 }
 
 .order-form__text::-webkit-input-placeholder {
@@ -143,6 +177,7 @@
 .order-form__caption {
   display: flex;
   @include form-title;
+  align-items: center;
 
   &::after {
     display: block;
@@ -153,7 +188,20 @@
     flex-grow: 1;
     height: 1px;
     background-color: $color-cyan;
-    align-self: center;
+  }
+
+  @media ($tablet) {
+    &::after {
+      display: none;
+      width: 167px;
+    }
+  }
+}
+
+.order-form__submit {
+  @media ($tablet) {
+    width: 228px;
+    margin-top: 40px;
   }
 }
 
@@ -162,4 +210,8 @@
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 35px;
+
+  @media ($tablet) {
+    order: 1;
+  }
 }
