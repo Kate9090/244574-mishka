@@ -17,21 +17,23 @@
 }
 
 .reviews__container {
-  // for btns
-  position: relative;
-
   display: flex;
   flex-direction: column;
+
 
   @include container;
 
   @media ($tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   @media ($desktop) {
     padding-top: 80px;
+    padding-left: 175px;
+    width: 875px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -69,7 +71,6 @@
     font-size: 53px;
     line-height: 57px;
     margin-top: 0;
-    padding-left: 175px;
   }
 }
 
@@ -87,7 +88,6 @@
 
   @media ($desktop) {
     width: 775px;
-    padding-left: 175px;
   }
 }
 
@@ -108,6 +108,7 @@
   }
 
   @media ($desktop) {
+    flex-basis: 350px;
     padding-bottom: 100px;
   }
 }
@@ -129,10 +130,7 @@
   font-size: 0;
 
   @media ($tablet) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    //order: 4;
+    order: 4;
 
     width: 167px;
   }

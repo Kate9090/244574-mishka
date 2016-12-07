@@ -9,8 +9,8 @@
     flex-wrap: wrap;
     height: 457px;
     padding-top: 100px;
-    align-content: space-between;
     @include container;
+    align-content: space-between;
   }
 }
 
@@ -87,8 +87,9 @@
   @media ($desktop) {
     flex-direction: column;
     padding-left: 175px;
-    width: 350px;
+    width: 300px;
     padding-top: 80px;
+    margin-right: 0;
   }
 }
 
@@ -149,9 +150,8 @@
 
   @media ($desktop) {
     margin: 0;
-    margin-right: auto;
     margin-left: 175px;
-    margin-top: auto;
     width: 230px;
+    margin-top: auto;
   }
 }

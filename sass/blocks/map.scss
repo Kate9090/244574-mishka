@@ -1,4 +1,6 @@
 .map {
+  margin-bottom: 39px;
+
   @media ($desktop) {
     order: 1;
   }
@@ -6,9 +8,6 @@
 
 .map__inner {
   height: 457px;
-  margin-right: auto;
-  margin-bottom: 39px;
-  margin-left: auto;
 
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
