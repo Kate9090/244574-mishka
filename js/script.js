@@ -2,7 +2,7 @@ var mainHeaderTop = document.querySelector(".main-header__top");
 var hamburger = document.querySelector(".main-header__toggle");
 var mainNav = document.querySelector(".main-nav");
 var userNav = document.querySelector(".user-nav");
-var extraNav = document.querySelector(".extra-nav");
+var popup = document.querySelector("modal");
 
 mainHeaderTop.classList.remove("no-js");
 

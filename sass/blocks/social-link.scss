@@ -7,6 +7,7 @@
   &--insta {
     width: 21px;
     height: 21px;
+    margin-left: -11px;
 
     background-image: url("../img/icon-insta.svg");
     background-repeat: no-repeat;
@@ -15,6 +16,8 @@
   &--fb {
     width: 15px;
     height: 27px;
+    margin-top: -4px;
+    margin-left: 6px;
 
     background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
@@ -24,6 +27,7 @@
     width: 23px;
     height: 20px;
     margin-right: 0;
+    margin-left: 1px;
 
     background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;

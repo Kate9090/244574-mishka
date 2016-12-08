@@ -1,5 +1,5 @@
 .best-seller {
-  padding-top: 32px;
+  padding-top: 28px;
 
   @media ($tablet) {
     padding-top: 55px;
@@ -30,7 +30,7 @@
 
 .best-seller__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   padding: 0;
 
   font-weight: bold;
@@ -58,6 +58,7 @@
   line-height: 16px;
   color: $color-cyan;
   text-transform: uppercase;
+  margin-bottom: 24px;
 
   @media ($tablet) {
     width: 125px;
@@ -100,7 +101,7 @@
 
 .best-seller__description {
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 17px;
 
   font-size: 15px;
 
@@ -120,6 +121,7 @@
 
 .best-seller__table {
   width: 100%;
+  margin-bottom: 28px;
 
   border-collapse: collapse;
 
@@ -139,20 +141,20 @@
 
 .best-seller__table-cell {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   font-size: 15px;
   line-height: 20px;
 
   &--value {
-    width: 165px;
+    width: 162px;
   }
 }
 
 .best-seller__image {
   width: 260px;
   height: 316px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   @media ($tablet) {
     width: 333px;
@@ -172,7 +174,7 @@
 }
 
 .best-seller__price {
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 
   font-weight: bold;
   text-align: center;
