@@ -9,10 +9,15 @@
     display: flex;
     align-items: baseline;
   }
+
+  @media ($desktop) {
+    padding-left: 60px;
+  }
 }
 
 .order-form__title {
   display: flex;
+  flex-shrink: 0;
   @include form-title;
 
   &::after {
@@ -36,6 +41,30 @@
   }
 }
 
+.order-form__lines {
+  @media ($tablet) {
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+    }
+
+    &--category {
+      width: 500px;
+    }
+  }
+
+  @media ($desktop) {
+    &--color {
+      width: 815px;
+    }
+
+    &--category {
+      width: 815px;
+    }
+  }
+}
+
 .order-form__line {
   margin-bottom: 30px;
 
@@ -46,6 +75,43 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+  }
+
+  @media ($desktop) {
+    width: 815px;
+    justify-content: flex-start;
+
+    &--small {
+      padding-left: 60px;
+    }
+  }
+}
+
+.order-form__lines--color .order-form__line {
+  @media ($tablet) {
+    flex-basis: 250px;
+  }
+
+  @media ($desktop) {
+    width: 262px;
+  }
+}
+
+.order-form__lines--name .order-form__line {
+  @media ($tablet) {
+    display: flex;
+    width: 500px;
+    align-items: baseline;
+  }
+
+  @media ($desktop) {
+    width: 640px;
+  }
+}
+
+.order-form__lines--name .order-form__label {
+  @media ($tablet) {
+    margin-right: 28px;
   }
 }
 
@@ -131,6 +197,10 @@
       display: none;
     }
   }
+
+  @media ($tablet) {
+    font-size: 19px;
+  }
 }
 
 .order-form__radio:checked ~ .order-form__label::after {
@@ -156,9 +226,15 @@
     padding-top: 10px;
     border: 2px solid #000000;
   }
+}
 
+.order-form__line--small .order-form__text {
   @media ($tablet) {
     width: 500px;
+  }
+
+  @media ($desktop) {
+    width: 640px;
   }
 }
 
@@ -191,9 +267,10 @@
   }
 
   @media ($tablet) {
+    width: 167px;
+
     &::after {
       display: none;
-      width: 167px;
     }
   }
 }
@@ -202,6 +279,10 @@
   @media ($tablet) {
     width: 228px;
     margin-top: 40px;
+  }
+
+  @media ($desktop) {
+    margin-left: 167px;
   }
 }
 
@@ -213,5 +294,10 @@
 
   @media ($tablet) {
     order: 1;
+    font-size: 17px;
+  }
+
+  @media ($desktop) {
+    margin-left: auto;
   }
 }
