@@ -1,6 +1,5 @@
 .production {
   @media ($desktop) {
-    padding-bottom: 40px;
   }
 }
 
@@ -18,13 +17,13 @@
     order: -1;
     width: 668px;
     height: 455px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   @media ($desktop) {
     width: 682px;
     height: 455px;
-    margin-right: 80px;
+    margin-right: 22px;
     margin-bottom: 0;
   }
 }
@@ -37,6 +36,10 @@
   padding-top: 18px;
 
   @include container;
+
+  @media ($tablet) {
+    padding-top: 0;
+  }
 
   @media ($desktop) {
     height: 455px;
@@ -84,7 +87,7 @@
   }
 
   @media ($tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 4px;
     padding-right: 42px;
     padding-left: 100px;
 
@@ -93,19 +96,20 @@
 
     &::before {
       bottom: 0;
-      left: 40px;
+      top: -6px;
+      left: 42px;
     }
   }
 
   @media ($desktop) {
     width: 210px;
     padding-top: 0;
-    padding-top: 80px;
     padding-right: 0;
     padding-left: 0;
+    padding-top: 95px;
 
     &::before {
-      top: 30px;
+      top: 41px;
       left: 0;
     }
   }
@@ -120,19 +124,20 @@
   margin-bottom: 25px;
 
   @media ($tablet) {
-    margin-bottom: 30px;
     padding-right: 42px;
     padding-left: 42px;
+    margin-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
   }
 
   @media ($desktop) {
-    width: 210px;
-    margin-bottom: 52px;
     padding-right: 0;
     padding-left: 0;
+    margin-top: 29px;
+    width: 226px;
+    margin-bottom: 46px;
   }
 }
 
@@ -145,6 +150,7 @@
     width: 586px;
     margin-right: 42px;
     margin-left: 42px;
+    margin-bottom: 45px;
   }
 
   @media ($desktop) {
