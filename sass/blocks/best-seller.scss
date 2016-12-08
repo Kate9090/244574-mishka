@@ -2,11 +2,12 @@
   padding-top: 28px;
 
   @media ($tablet) {
-    padding-top: 55px;
+    padding-top: 39px;
   }
 
   @media ($desktop) {
     padding-top: 0;
+    margin-top: -42px;
   }
 }
 
@@ -20,11 +21,11 @@
 
   @media ($tablet) {
     flex-direction: row;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
   }
 
   @media ($desktop) {
-    transform: translateY(155px);
+    transform: translateY(159px);
   }
 }
 
@@ -62,7 +63,7 @@
 
   @media ($tablet) {
     width: 125px;
-    margin-top: 15px;
+    margin-top: 12px;
 
     text-align: center;
   }
@@ -102,20 +103,22 @@
 .best-seller__description {
   margin: 0;
   margin-bottom: 17px;
+  line-height: 24px;
 
   font-size: 15px;
 
   @media ($tablet) {
+    line-height: 30px;
     width: 292px;
-    margin-bottom: 25px;
-    margin-top: 0;
+    margin-bottom: 35px;
+    margin-top: -7px;
 
     font-size: 17px;
   }
 
   @media ($desktop) {
-    margin-bottom: 65px;
-    padding-top: 160px;
+    margin-bottom: 48px;
+    padding-top: 166px;
   }
 }
 
@@ -148,6 +151,18 @@
 
   &--value {
     width: 162px;
+  }
+
+  @media ($tablet) {
+    &--value {
+      width: 195px;
+    }
+  }
+
+  @media ($desktop) {
+    &--value {
+      width: 195px;
+    }
   }
 }
 
@@ -182,11 +197,16 @@
   @media ($tablet) {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 34px;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 34px;
   }
 }
 
 .best-seller__buy .best-seller__order {
   @media ($tablet) {
-    width: 292px;
+    width: 290px;
   }
 }

@@ -23,12 +23,12 @@
   border-bottom: 1px solid #ececec;
 
   @media ($tablet) {
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 85px, #e7e7e7 85px, #e7e7e7 86px, #f9f9f9 86px,  #f9f9f9 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 88px, #e7e7e7 88px, #e7e7e7 89px, #f9f9f9 89px, #f9f9f9 100%);
     padding-top: 0;
     border-bottom: 0;
 
     &--gray {
-      background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 85px, #e7e7e7 85px, #e7e7e7 86px, #f1f1f1 86px,  #f1f1f1 100%);
+      background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 88px, #e7e7e7 88px, #e7e7e7 89px, #f1f1f1 89px,  #f1f1f1 100%);
     }
   }
 }

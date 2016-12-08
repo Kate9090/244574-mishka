@@ -55,7 +55,9 @@
   text-decoration: none;
 
   @media ($tablet) {
-    padding-left: 30px;
+    padding-bottom: 37px;
+    padding-left: 37px;
+    padding-right: 0px;
 
     &--search {
       font-size: 0;
@@ -106,5 +108,10 @@
 
   @media ($tablet) {
     width: auto;
+
+    &:before {
+      top: 6px;
+      left: -5px;
+    }
   }
 }
