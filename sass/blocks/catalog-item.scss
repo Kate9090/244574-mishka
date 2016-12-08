@@ -39,6 +39,8 @@
 .catalog-item__description {
   font-size: 13px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 19px;
 
   @media ($tablet) {
     font-size: 15px;
@@ -47,6 +49,7 @@
 }
 
 .catalog-item__img {
+
   @media ($tablet) {
     width: 334px;
     height: 334px;
@@ -65,8 +68,11 @@
 }
 
 .catalog-item__content {
+  padding-top: 6px;
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
 
   @media ($tablet) {
     width: 274px;
@@ -99,7 +105,7 @@
 
   width: 205px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 25px;
 
   border-top: 1px solid #ededed;
