@@ -6,6 +6,18 @@
 
   list-style-type: none;
 
+
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 247px;
+    background-color: #ffffff;
+    z-index: 2;
+
+    &--closed {
+      display: none;
+    }
+  }
+
   @media ($tablet) {
     flex-grow: 1;
     width: auto;
@@ -13,10 +25,11 @@
     font-size: 0;
     text-align: right;
   }
+}
 
-  @media ($desktop) {
-
-  }
+.no-js .user-nav {
+  display: block;
+  position: static;
 }
 
 .user-nav__item {

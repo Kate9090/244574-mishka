@@ -22,8 +22,6 @@
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 
-  @include clearfix;
-
   @media ($tablet) {
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 85px, #e7e7e7 85px, #e7e7e7 86px, #f9f9f9 86px,  #f9f9f9 100%);
     padding-top: 0;
@@ -48,9 +46,17 @@
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
 
+  &--opened {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
   @media ($tablet) {
     display: none;
   }
+}
+
+.no-js .main-header__toggle {
+  display: none;
 }
 
 .main-header__title {

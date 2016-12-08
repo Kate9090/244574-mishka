@@ -7,6 +7,17 @@
   order: 2;
   font-size: 0;
 
+  @media (max-width: 767px) {
+    position: absolute;
+    top: 77px;
+    background-color: #ffffff;
+    z-index: 2;
+
+    &--closed {
+      display: none;
+    }
+  }
+
   @media ($tablet) {
     order: 4;
     width: 60%;
@@ -16,6 +27,11 @@
     order: 1;
     width: 46%;
   }
+}
+
+.no-js .main-nav {
+  display: block;
+  position: static;
 }
 
 .main-nav__item {
