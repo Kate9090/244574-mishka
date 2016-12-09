@@ -141,9 +141,21 @@
     width: 145px;
   }
 
+  &--mail {
+    border-bottom: 1px solid $color-cyan;
+
+    &:hover {
+      color: $color-cyan;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   @media ($tablet) {
     font-size: 17px;
-    width: 225px;
+    width: 207px;
   }
 }
 

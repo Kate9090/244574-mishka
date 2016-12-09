@@ -58,8 +58,18 @@
   padding: 0;
 
   background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
   border: 0;
   transform: translate(-50%, -50%);
+
+  &:hover {
+    transform: scale(1.2) translate(-40%, -40%);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8) translate(-60%, -60%);
+  }
 }
 
 .production__title {

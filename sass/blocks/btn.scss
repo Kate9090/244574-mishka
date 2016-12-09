@@ -18,4 +18,13 @@
   background-color: #ffffff;
   border: 2px solid $color-text-ordinary;
   cursor: pointer;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }

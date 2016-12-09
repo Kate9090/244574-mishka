@@ -47,6 +47,10 @@
   border: 2px solid #ececec;
   cursor: pointer;
 
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
   @media ($tablet) {
     width: 108px;
   }

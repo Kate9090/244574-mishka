@@ -37,3 +37,11 @@
     padding-right: 58px;
   }
 }
+
+.extra-nav__link:hover {
+  opacity: 0.6;
+}
+
+.extra-nav__link:active {
+  opacity: 0.3;
+}
