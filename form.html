@@ -60,32 +60,34 @@
             </div>
           </div>
           <div class="order-form__section order-form__section--color">
-            <div class="order-form__title">Цвет</div>
-            <div class="order-form__lines order-form__lines--color">
-              <p class="order-form__line">
-                <input class="order-form__checkbox" id="white" type="checkbox" name="white" checked>
-                <label class="order-form__label order-form__label--checkbox" for="white">Белый</label>
-              </p>
-              <p class="order-form__line">
-                <input class="order-form__checkbox" id="gray" type="checkbox" name="gray" checked>
-                <label class="order-form__label order-form__label--checkbox" for="gray">Серый</label>
-              </p>
-              <p class="order-form__line">
-                <input class="order-form__checkbox" id="tiffany" type="checkbox" name="tiffany">
-                <label class="order-form__label order-form__label--checkbox" for="tiffany">«Тиффани»</label>
-              </p>
-              <p class="order-form__line">
-                <input class="order-form__checkbox" id="black" type="checkbox" name="black">
-                <label class="order-form__label order-form__label--checkbox" for="black">Черный</label>
-              </p>
-              <p class="order-form__line">
-                <input class="order-form__checkbox" id="pink" type="checkbox" name="pink">
-                <label class="order-form__label order-form__label--checkbox" for="pink">Розовый</label>
-              </p>
-              <p class="order-form__line">
-                <input class="order-form__checkbox" id="orange" type="checkbox" name="orange">
-                <label class="order-form__label order-form__label--checkbox" for="orange">Оранжевый</label>
-              </p>
+            <div class="order-form__inner">
+              <div class="order-form__title">Цвет</div>
+              <div class="order-form__lines order-form__lines--color">
+                <p class="order-form__line">
+                  <input class="order-form__checkbox" id="white" type="checkbox" name="white" checked>
+                  <label class="order-form__label order-form__label--checkbox" for="white">Белый</label>
+                </p>
+                <p class="order-form__line">
+                  <input class="order-form__checkbox" id="gray" type="checkbox" name="gray" checked>
+                  <label class="order-form__label order-form__label--checkbox" for="gray">Серый</label>
+                </p>
+                <p class="order-form__line">
+                  <input class="order-form__checkbox" id="tiffany" type="checkbox" name="tiffany">
+                  <label class="order-form__label order-form__label--checkbox" for="tiffany">«Тиффани»</label>
+                </p>
+                <p class="order-form__line">
+                  <input class="order-form__checkbox" id="black" type="checkbox" name="black">
+                  <label class="order-form__label order-form__label--checkbox" for="black">Черный</label>
+                </p>
+                <p class="order-form__line">
+                  <input class="order-form__checkbox" id="pink" type="checkbox" name="pink">
+                  <label class="order-form__label order-form__label--checkbox" for="pink">Розовый</label>
+                </p>
+                <p class="order-form__line">
+                  <input class="order-form__checkbox" id="orange" type="checkbox" name="orange">
+                  <label class="order-form__label order-form__label--checkbox" for="orange">Оранжевый</label>
+                </p>
+              </div>
             </div>
           </div>
           <div class="order-form__section order-form__section--name">
@@ -105,24 +107,28 @@
               </p>
             </div>
           </div>
-          <p class="order-form__line  order-form__line--small">
-            <label class="order-form__caption">Тел</label>
-            <input class="order-form__text" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
-          </p>
-          <p class="order-form__line  order-form__line--small">
-            <label class="order-form__caption order-form__caption--mail">E-mail</label>
-            <input class="order-form__text" type="email" name="email" placeholder="Ваш Email*">
-          </p>
-          <p class="order-form__line  order-form__line--small">
+          <div class="order-form__line order-form__line--small order-form__line--gray">
+            <p class="order-form__inner order-form__inner--space-top">
+              <label class="order-form__caption">Тел</label>
+              <input class="order-form__text" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            </p>
+          </div>
+          <div class="order-form__line order-form__line--small order-form__line--gray">
+            <p class="order-form__inner order-form__inner--space-bottom">
+              <label class="order-form__caption order-form__caption--mail">E-mail</label>
+              <input class="order-form__text" type="email" name="email" placeholder="Ваш Email*">
+            </p>
+          </div>
+          <div class="order-form__line  order-form__line--small order-form__line--box">
             <label class="order-form__caption order-form__caption--box">Доп</label>
             <textarea class="order-form__text order-form__text--box" name="name" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             <small class="order-form__note"><sup>*</sup>Поля обязательны для заполнения</small>
             <button class="order-form__submit btn" type="submit">Отправить заказ</button>
-          </p>
+          </div>
         </form>
       </div>
     </div>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--tall">
       <div class="main-footer__container">
         <a class="main-footer__logo" href="index.html">
           <img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">

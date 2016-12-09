@@ -9,6 +9,11 @@
     margin-top: 63px;
     padding-top: 60px;
     padding-bottom: 10px;
+
+    &--tall {
+      margin-top: 37px;
+      padding-bottom: 30px;
+    }
   }
 
   @media ($desktop) {

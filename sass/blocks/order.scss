@@ -6,6 +6,11 @@
 
 .order__container {
   @include container;
+
+  @media ($tablet) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .order__description {
@@ -19,6 +24,6 @@
     font-size: 17px;
     line-height: 30px;
     margin-top: 51px;
-    padding-right: 51px;
+    width: 668px;
   }
 }
