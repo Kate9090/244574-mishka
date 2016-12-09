@@ -46,11 +46,11 @@
     padding-left: 112px;
 
     &--name {
-      width: auto;
+      width: 1050px;
     }
 
     &--category {
-      width: auto;
+      width: 1050px;;
     }
   }
 }
@@ -369,7 +369,7 @@
   border: 0;
   padding-top: 17px;
   padding-bottom: 14px;
-  padding-right: 10px;
+  padding-right: 40px;
   border-bottom: 2px solid #000000;
 
   &--box {
@@ -381,6 +381,7 @@
 
   @media ($tablet) {
     padding-left: 14px;
+    padding-right: 70px;
   }
 }
 
@@ -407,13 +408,40 @@
 }
 
 .order-form__caption {
+  position: relative;
   display: flex;
   @include form-title;
   align-items: center;
   margin-bottom: 7px;
 
+  &--phone {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      right: 5px;
+      width: 25px;
+      height: 24px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
+  }
+
   &--mail {
     padding-top: 15px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 47px;
+      right: 5px;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      opacity: 0.2;
+    }
   }
 
   &--box {
@@ -438,10 +466,38 @@
     &::after {
       display: none;
     }
+
+    &--phone {
+      &::before {
+        top: -3px;
+        right: -469px;
+      }
+    }
+
+    &--mail {
+      &::before {
+        top: 9px;
+        right: -469px;
+      }
+    }
   }
 
   @media ($desktop) {
     width: 113px;
+
+    &--phone {
+      &::before {
+        top: -3px;
+        right: -688px;
+      }
+    }
+
+    &--mail {
+      &::before {
+        top: 9px;
+        right: -688px;
+      }
+    }
   }
 }
 
