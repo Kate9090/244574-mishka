@@ -1,18 +1,35 @@
 .order-form {
-  padding-top: 30px;
+  padding-top: 25px;
+
+  @media ($tablet) {
+    padding-top: 39px;
+  }
 }
 
 .order-form__section {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
 
   @media ($tablet) {
+    margin-bottom: 26px;
     display: flex;
     align-items: baseline;
+
+    &--color {
+      padding-top: 27px;
+    }
   }
 
   @media ($desktop) {
     padding-left: 60px;
   }
+}
+
+.order-form__section--name .order-form__label {
+  padding-left: 0;
 }
 
 .order-form__title {
@@ -23,7 +40,7 @@
   &::after {
     display: block;
     content: "";
-    margin-left: 25px;
+    margin-left: 27px;
     width: 50px;
 
     flex-grow: 1;
@@ -66,9 +83,11 @@
 }
 
 .order-form__line {
-  margin-bottom: 30px;
+  margin-bottom: 7px;
 
   @media ($tablet) {
+    margin-bottom: 42px;
+
     &--small {
       display: flex;
       align-items: baseline;
@@ -89,7 +108,13 @@
 
 .order-form__lines--color .order-form__line {
   @media ($tablet) {
-    flex-basis: 250px;
+    &:nth-child(2n+1) {
+      flex-basis: 262px;
+    }
+
+    &:nth-child(2n) {
+      flex-basis: 238px;
+    }
   }
 
   @media ($desktop) {
@@ -140,15 +165,27 @@
     padding-left: 0;
   }
 
+  &--f-name {
+    margin-top: 29px;
+  }
+
+  &--s-name {
+    padding-top: 5px;
+  }
+
+  &--father-name {
+    padding-top: 4px;
+  }
+
   &--radio {
-    padding-top: 15px;
+    padding-top: 16px;
 
     &::before {
       position: absolute;
-      top: 0;
       left: 0;
-      width: 38px;
-      height: 38px;
+      top: 7px;
+      width: 36px;
+      height: 35px;
       content: "";
       display: block;
       border-radius: 50%;
@@ -157,8 +194,8 @@
 
     &::after {
       position: absolute;
-      top: 13px;
-      left: 13px;
+      top: 18px;
+      left: 12px;
       width: 16px;
       height: 16px;
       content: "";
@@ -169,15 +206,22 @@
     }
   }
 
+  &--toys {
+    &::before {
+      top: -1px;
+    }
+  }
+
   &--checkbox {
-    padding-top: 12px;
+    padding-top: 20px;
+    padding-bottom: 6px;
 
     &::before {
       position: absolute;
-      top: 0;
+      top: 7px;
       left: 0;
-      width: 38px;
-      height: 37px;
+      width: 36px;
+      height: 36px;
       content: "";
       display: block;
       border: 2px solid #444444;
@@ -185,9 +229,9 @@
 
     &::after {
       position: absolute;
-      top: 13px;
-      left: 13px;
-      width: 16px;
+      top: 20px;
+      left: 9px;
+      width: 20px;
       height: 8px;
       content: "";
       display: block;
@@ -200,6 +244,36 @@
 
   @media ($tablet) {
     font-size: 19px;
+    padding-left: 80px;
+
+    &--radio {
+      &::before {
+        top: 0px;
+        width: 48px;
+        height: 47px;
+      }
+
+      &::after {
+        top: 16px;
+        left: 16px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--checkbox {
+      &::before {
+        width: 50px;
+        height: 47px;
+      }
+
+      &:after {
+        top: 21px;
+        left: 12px;
+        width: 28px;
+        height: 13px;
+      }
+    }
   }
 }
 
@@ -215,15 +289,15 @@
   box-sizing: border-box;
   width: 100%;
   border: 0;
-  padding-top: 20px;
-  padding-bottom: 18px;
+  padding-top: 17px;
+  padding-bottom: 14px;
   padding-right: 10px;
   border-bottom: 2px solid #000000;
 
   &--box {
     resize: none;
-    height: 138px;
-    padding-top: 10px;
+    height: 142px;
+    padding-top: 15px;
     border: 2px solid #000000;
   }
 }
@@ -254,6 +328,16 @@
   display: flex;
   @include form-title;
   align-items: center;
+  margin-bottom: 7px;
+
+  &--mail {
+    padding-top: 15px;
+  }
+
+  &--box {
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
 
   &::after {
     display: block;
@@ -290,7 +374,8 @@
   display: block;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
+  margin-top: 10px;
 
   @media ($tablet) {
     order: 1;

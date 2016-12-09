@@ -46,7 +46,7 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="order-form" action="#" method="get">
-          <div class="order-form__section">
+          <div class="order-form__section order-form__section--category">
             <div class="order-form__title">Тип</div>
             <div class="order-form__lines order-form__lines--category">
               <p class="order-form__line">
@@ -55,11 +55,11 @@
               </p>
               <p class="order-form__line">
                 <input class="order-form__radio" id="toys" type="radio" name="category" value="toys">
-                <label class="order-form__label order-form__label--radio" for="toys">Детская игрушка</label>
+                <label class="order-form__label order-form__label--radio order-form__label--toys" for="toys">Детская игрушка</label>
               </p>
             </div>
           </div>
-          <div class="order-form__section">
+          <div class="order-form__section order-form__section--color">
             <div class="order-form__title">Цвет</div>
             <div class="order-form__lines order-form__lines--color">
               <p class="order-form__line">
@@ -88,7 +88,7 @@
               </p>
             </div>
           </div>
-          <div class="order-form__section">
+          <div class="order-form__section order-form__section--name">
             <div class="order-form__title">ФИО</div>
             <div class="order-form__lines order-form__lines--name">
               <p class="order-form__line">
@@ -110,11 +110,11 @@
             <input class="order-form__text" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
           </p>
           <p class="order-form__line  order-form__line--small">
-            <label class="order-form__caption">E-mail</label>
+            <label class="order-form__caption order-form__caption--mail">E-mail</label>
             <input class="order-form__text" type="email" name="email" placeholder="Ваш Email*">
           </p>
           <p class="order-form__line  order-form__line--small">
-            <label class="order-form__caption">Доп</label>
+            <label class="order-form__caption order-form__caption--box">Доп</label>
             <textarea class="order-form__text order-form__text--box" name="name" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             <small class="order-form__note"><sup>*</sup>Поля обязательны для заполнения</small>
             <button class="order-form__submit btn" type="submit">Отправить заказ</button>
