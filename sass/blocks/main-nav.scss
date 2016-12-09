@@ -64,17 +64,17 @@
 
   @media ($desktop) {
     font-size: 17px;
-    padding-top: 30px;
+    padding-top: 22px;
     padding-bottom: 30px;
     margin-right: 0;
-    padding-right: 30px;
+    padding-right: 35px;
 
     &--catalog {
       border-right: 1px solid #ececec;
     }
 
     &--order {
-      padding-left: 41px;
+      padding-left: 35px
     }
   }
 }

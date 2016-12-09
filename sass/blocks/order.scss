@@ -26,4 +26,9 @@
     margin-top: 51px;
     width: 668px;
   }
+
+  @media ($desktop) {
+    width: 700px;
+    margin-top: 121px;
+  }
 }
