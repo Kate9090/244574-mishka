@@ -1,13 +1,32 @@
 .order {
-  padding-top: 27px;
+  padding-top: 22px;
 }
 
 .order__container {
   @include container;
+
+  @media ($tablet) {
+    width: auto;
+    margin: 0;
+  }
 }
 
 .order__description {
   margin: 0;
 
   font-size: 13px;
+
+  @media ($tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 51px;
+    width: 668px;
+  }
+
+  @media ($desktop) {
+    width: 700px;
+    margin-top: 121px;
+  }
 }

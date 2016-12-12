@@ -1,24 +1,41 @@
 .contacts {
-  position: relative;
-  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 86px;
   font-size: 0;
 
+  @media ($tablet) {
+    padding-top: 66px;
+  }
+
   @media ($desktop) {
-    padding-top: 100px;
+    flex-wrap: wrap;
+    height: 457px;
+    padding-top: 77px;
+    @include container;
+    align-content: space-between;
   }
 }
 
 .contacts__container {
   position: relative;
+
   @include container;
 
   @media ($tablet) {
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media ($desktop) {
+    //width: auto;
+    width: 525px;
+    margin: 0;
+  }
 }
 
-.contacts__container:nth-child(1) {
+.contacts__container {
   @media ($tablet) {
     &::before {
       content: "";
@@ -27,15 +44,22 @@
       background-repeat: no-repeat;
       width: 47px;
       height: 82px;
-      top: -10px;
-      right: 0;
+      top: -15px;
+      right: 3px;
+    }
+  }
+
+  @media ($desktop) {
+    &:before {
+      left: 64px;
+      top: 62px;
     }
   }
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   font-size: 18px;
   line-height: 30px;
@@ -44,11 +68,32 @@
   @media ($tablet) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 50px;
   }
 
   @media ($desktop) {
+    font-size: 53px;
+    line-height: 57px;
     padding-left: 175px;
     margin-bottom: 50px;
+    transform: translateY(71px);
+  }
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+
+  @media ($tablet) {
+    flex-direction: row;
+  }
+
+  @media ($desktop) {
+    flex-direction: column;
+    padding-left: 175px;
+    width: 300px;
+    padding-top: 70px;
+    margin-right: 0;
   }
 }
 
@@ -58,35 +103,33 @@
   font-size: 0;
 
   @media ($tablet) {
-    display: inline-block;
-    width: 325px;
+    //width: 325px;
+    width: 50%;
   }
 
   @media ($desktop) {
-    display: block;
-    padding-left: 175px;
-    padding-bottom: 0;
+    padding-bottom: 9px;
+    width: 350px;
   }
 }
 
 .contacts__field {
   display: inline-block;
-  width: 79px;
+  width: 77px;
 
   font-size: 15px;
   line-height: 30px;
   vertical-align: top;
 
   @media ($tablet) {
-    width: 72px;
+    width: 77px;
     font-size: 17px;
   }
-
 }
 
 .contacts__text {
   display: inline-block;
-  width: 181px;
+  width: 183px;
 
   font-size: 15px;
   line-height: 30px;
@@ -98,9 +141,21 @@
     width: 145px;
   }
 
+  &--mail {
+    border-bottom: 1px solid $color-cyan;
+
+    &:hover {
+      color: $color-cyan;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   @media ($tablet) {
     font-size: 17px;
-    width: 225px;
+    width: 207px;
   }
 }
 
@@ -109,10 +164,14 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media ($tablet) {
+    width: 230px;
+  }
+
   @media ($desktop) {
     margin: 0;
-    margin-right: auto;
     margin-left: 175px;
-    margin-top: 80px;
+    width: 230px;
+    margin-top: auto;
   }
 }

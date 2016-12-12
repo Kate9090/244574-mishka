@@ -1,24 +1,36 @@
 .main-footer {
-  margin-top: 39px;
+  margin-top: 57px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   background-color: $color-background;
 
   @media ($tablet) {
-    margin-top: 58px;
-    @include clearfix;
-    padding-top: 50px;
+    margin-top: 63px;
+    padding-top: 60px;
     padding-bottom: 10px;
+
+    &--tall {
+      margin-top: 37px;
+      padding-bottom: 30px;
+    }
   }
 
   @media ($desktop) {
-    margin-top: 105px;
+    margin-top: 37px;
   }
 }
 
 .main-footer__container {
+  display: flex;
+
+  flex-direction: column;
+
   @include container;
+
+  @media ($tablet) {
+    flex-direction: row;
+  }
 }
 
 .main-footer__logo {
@@ -28,7 +40,6 @@
     display: block;
     //width: 160px;
     width: 33%;
-    float: left;
   }
 }
 
@@ -36,16 +47,14 @@
   text-align: center;
 
   @media ($tablet) {
-    display: block;
     //width: 197px;
-    width: 33%;
-    float: left;
+    width: 32%;
     text-align: right;
   }
 }
 
 .main-footer__copyright-text {
-  margin-right: 30px;
+  margin-right: 19px;
 
   font-weight: bold;
   font-size: 19px;
@@ -57,6 +66,7 @@
   display: inline-block;
   width: 27px;
   height: 34px;
+  margin-top: -3px;
 
   font-size: 0;
   vertical-align: top;

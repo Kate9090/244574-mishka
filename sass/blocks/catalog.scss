@@ -4,15 +4,23 @@
   font-size: 0;
 
   @media ($tablet) {
-    padding-top: 80px;
+    padding-top: 78px;
+    margin-bottom: 53px;
   }
 
   @media ($desktop) {
-    margin-bottom: 30px;
-    padding-top: 80px;
+    margin-bottom: 27px;
+    padding-top: 150px;
   }
 }
 
 .catalog__container {
   @include container;
+  display: flex;
+  flex-direction: column;
+
+  @media ($desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

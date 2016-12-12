@@ -2,22 +2,14 @@
   display: block;
   width: 86px;
   height: 35px;
-  margin-right: auto;
-  margin-bottom: 27px;
-  margin-left: auto;
+  margin-bottom: 22px;
+  order: 1;
 
   @media ($tablet) {
-    float: left;
-    margin-top: 23px;
+    margin-top: 15px;
   }
 
   @media ($desktop) {
-    position: absolute;
-    top: 23px;
-    left: 50%;
-
-    margin: 0;
-
-    transform: translateX(-50%);
+    order: 2;
   }
 }
