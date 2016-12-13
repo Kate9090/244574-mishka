@@ -43,6 +43,14 @@
   }
 }
 
+.main-footer__logo:hover path {
+  fill: #46c1ae;
+}
+
+.main-footer__logo:active {
+  opacity: 0.3;
+}
+
 .main-footer__copyright {
   text-align: center;
 
@@ -55,22 +63,30 @@
 
 .main-footer__copyright-text {
   margin-right: 19px;
+  font-size: 19px;
+}
 
+.main-footer__copyright-link {
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
   color: $color-text-title;
-}
-
-.main-footer__copyright-link {
-  display: inline-block;
-  width: 27px;
-  height: 34px;
-  margin-top: -3px;
+  text-decoration: none;
+  justify-content: flex-end;
 
   font-size: 0;
-  vertical-align: top;
+}
 
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
+.main-footer__copyright-link:hover path {
+  fill: #46c1ae;
+}
+
+.main-footer__copyright-link:active {
+  opacity: 0.3;
+}
+
+.main-footer__copyright-link:active .main-footer__copyright-text {
+  opacity: 0.3;
 }

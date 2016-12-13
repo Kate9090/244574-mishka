@@ -56,19 +56,49 @@
 }
 
 .order-form__inner {
+  position: relative;
+
   @media ($tablet) {
     margin: 0;
     display: flex;
     align-items: baseline;
     @include container;
 
-    &--space-top {
+    &--phone {
       padding-top: 50px;
     }
 
-    &--space-bottom {
+    &--mail {
       padding-bottom: 28px;
     }
+  }
+}
+
+.order-form__inner svg {
+  position: absolute;
+  top: 35px;
+  right: 5px;
+}
+
+.order-form__inner--phone svg {
+  @media ($tablet) {
+    top: 65px;
+    right: 10px;
+  }
+
+  @media ($desktop) {
+    right: 250px;
+  }
+}
+
+.order-form__inner--mail svg {
+  @media ($tablet) {
+    top: 15px;
+    right: 10px;
+  }
+
+  @media ($desktop) {
+    right: 250px;
   }
 }
 
@@ -413,6 +443,10 @@
   }
 }
 
+.order-form__text:hover ~ svg path {
+  fill: #46c1ae;
+}
+
 .order-form__line--small .order-form__text {
   @media ($tablet) {
     width: 500px;
@@ -442,35 +476,11 @@
   align-items: center;
   margin-bottom: 7px;
 
-  &--phone {
-    &:before {
-      content: "";
-      position: absolute;
-      top: 35px;
-      right: 5px;
-      width: 25px;
-      height: 24px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-    }
-  }
-
+/*
   &--mail {
     padding-top: 15px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 47px;
-      right: 5px;
-      width: 32px;
-      height: 32px;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-    }
   }
+*/
 
   &--box {
     padding-top: 15px;
@@ -494,38 +504,10 @@
     &::after {
       display: none;
     }
-
-    &--phone {
-      &::before {
-        top: -3px;
-        right: -469px;
-      }
-    }
-
-    &--mail {
-      &::before {
-        top: 9px;
-        right: -469px;
-      }
-    }
   }
 
   @media ($desktop) {
     width: 113px;
-
-    &--phone {
-      &::before {
-        top: -3px;
-        right: -688px;
-      }
-    }
-
-    &--mail {
-      &::before {
-        top: 9px;
-        right: -688px;
-      }
-    }
   }
 }
 
