@@ -1,20 +1,33 @@
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
 
   padding-top: 86px;
   font-size: 0;
+  margin-bottom: 39px;
 
   @media ($tablet) {
     padding-top: 66px;
+    margin-bottom: 57px;
   }
 
   @media ($desktop) {
     flex-wrap: wrap;
     height: 457px;
-    padding-top: 77px;
+    padding-top: 80px;
     @include container;
     align-content: space-between;
+    margin-bottom: 105px;
+
+
+    &:before {
+      display: none;
+      top: -12px;
+      background-size: 1150px 23px;
+      height: 23px;
+    }
+
   }
 }
 
@@ -68,7 +81,7 @@
   @media ($tablet) {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 
   @media ($desktop) {
@@ -155,7 +168,7 @@
 
   @media ($tablet) {
     font-size: 17px;
-    width: 207px;
+    width: auto;
   }
 }
 

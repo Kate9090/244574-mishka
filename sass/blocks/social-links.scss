@@ -1,15 +1,21 @@
 .social-links {
-  margin-bottom: 25px;
-  padding-bottom: 27px;
+  margin-bottom: 4px;
+  padding-bottom: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  text-align: center;
 
   font-size: 0;
-  text-align: center;
 
   border-bottom: 1px solid #e5e5e5;
 
+
+
   @media ($tablet) {
+    padding-top: 13px;
     //width: 300px;
-    width: 35%;
+    width: 36%;
     border: 0;
   }
 }

@@ -1,6 +1,14 @@
 .social-link {
   display: inline-block;
-  margin-right: 37px;
+
+  &--insta {
+    margin-right: 40px;
+  }
+
+  &--fb {
+    margin-top: -7px;
+    margin-right: 39px;
+  }
 
   vertical-align: top;
 }

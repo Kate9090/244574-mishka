@@ -43,6 +43,13 @@
   }
 }
 
+.user-nav__item:first-child {
+  @media ($tablet) {
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+}
+
 .user-nav__link {
   display: block;
   padding-top: 30px;
@@ -63,15 +70,15 @@
   }
 
   @media ($tablet) {
-    padding-bottom: 37px;
+    padding-bottom: 35px;
     padding-left: 37px;
     padding-right: 0px;
 
     &--search {
       font-size: 0;
 
-      border-right: 1px solid #ececec;
-      border-left: 1px solid #ececec;
+      //border-right: 1px solid #ececec;
+      //border-left: 1px solid #ececec;
     }
   }
 }
@@ -98,4 +105,13 @@
   position: absolute;
 
   left: 0;
+
+  @media ($tablet) {
+    top: 5px;
+    left: -4px;
+  }
+
+  @media ($desktop) {
+    left: -6px;
+  }
 }
