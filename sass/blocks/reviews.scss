@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media ($desktop) {

@@ -6,10 +6,15 @@
   order: 1;
 
   @media ($tablet) {
+    width: 113px;
+    height: 46px;
     margin-top: 15px;
   }
 
   @media ($desktop) {
+    margin: 0;
+    width: 149px;
+    height: 73px;
     order: 2;
   }
 }

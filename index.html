@@ -12,7 +12,11 @@
       <div class="main-header__top no-js">
         <div class="main-header__container">
           <a class="logo">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Мишка">
+            </picture>
           </a>
           <button class="main-header__toggle main-header__toggle--opened" type="button">Открыть меню</button>
           <ul class="main-nav main-nav--closed">
@@ -71,7 +75,11 @@
             </tr>
           </table>
           <div class="best-seller__image">
-            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-tablet@2x.jpg 2x" alt="Вязаные корзинки" width="260" height="315">
+            </picture>
           </div>
           <div class="best-seller__buy">
             <div class="best-seller__price">Цена: 990руб.</div>
@@ -132,7 +140,7 @@
     <footer class="main-footer">
       <div class="main-footer__container">
         <a class="main-footer__logo" href="#">
-          <img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
+          <img src="img/logo-footer.svg" alt="Мишка" width="86" height="35">
         </a>
         <div class="social-links">
           <a class="social-link social-link--insta" href="#">Мы в Инстаграмме</a>
