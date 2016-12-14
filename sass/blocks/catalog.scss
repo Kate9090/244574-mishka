@@ -1,12 +1,12 @@
 .catalog {
-  padding-top: 30px;
   margin-bottom: 25px;
+  padding-top: 30px;
 
   font-size: 0;
 
   @media ($tablet) {
-    padding-top: 80px;
     margin-bottom: 51px;
+    padding-top: 80px;
   }
 
   @media ($desktop) {
@@ -16,9 +16,10 @@
 }
 
 .catalog__container {
-  @include container;
   display: flex;
   flex-direction: column;
+
+  @include container;
 
   @media ($desktop) {
     flex-direction: row;

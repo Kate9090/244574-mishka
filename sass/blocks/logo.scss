@@ -1,9 +1,9 @@
 .logo {
   display: block;
+  order: 1;
   width: 86px;
   height: 35px;
   margin-bottom: 22px;
-  order: 1;
 
   @media ($tablet) {
     width: 113px;
@@ -12,10 +12,10 @@
   }
 
   @media ($desktop) {
-    margin: 0;
+    order: 2;
     width: 149px;
     height: 73px;
-    order: 2;
+    margin: 0;
   }
 
   &:hover {

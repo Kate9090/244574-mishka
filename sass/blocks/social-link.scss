@@ -1,6 +1,8 @@
 .social-link {
   display: inline-block;
 
+  vertical-align: top;
+
   &--insta {
     margin-right: 40px;
   }
@@ -9,8 +11,6 @@
     margin-top: -7px;
     margin-right: 39px;
   }
-
-  vertical-align: top;
 }
 
 .social-link:hover path {

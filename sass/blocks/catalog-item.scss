@@ -16,9 +16,9 @@
 
   @media ($desktop) {
     flex-direction: column;
-    margin-bottom: 0;
     width: 315px;
     margin-right: 52px;
+    margin-bottom: 0;
     padding-bottom: 30px;
 
     border: 0;
@@ -33,8 +33,8 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  text-decoration: none;
   color: $color-text-title;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.6;
@@ -51,15 +51,17 @@
 }
 
 .catalog-item__description {
-  font-size: 13px;
-  line-height: 30px;
   margin: 0;
   margin-bottom: 19px;
 
+  font-size: 13px;
+  line-height: 30px;
+
   @media ($tablet) {
+    margin-top: -3px;
+
     font-size: 15px;
     line-height: 30px;
-    margin-top: -3px;
   }
 
   @media ($desktop) {
@@ -68,7 +70,6 @@
 }
 
 .catalog-item__img {
-
   @media ($tablet) {
     width: 334px;
     height: 334px;
@@ -87,36 +88,39 @@
 }
 
 .catalog-item__content {
-  padding-top: 6px;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid #ededed;
+  padding-top: 6px;
+
   border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
 
   @media ($tablet) {
     width: 274px;
     padding-top: 26px;
     padding-right: 30px;
     padding-left: 30px;
+
     border-top: 1px solid #ededed;
   }
 
   @media ($desktop) {
-    width: 253px;
     flex-grow: 1;
-    border: 1px solid #ededed;
-    padding-left: 27px;
+    width: 253px;
     padding-right: 33px;
+    padding-left: 27px;
+
+    border: 1px solid #ededed;
     border-top: 0;
   }
 }
 
 .catalog-item:hover .catalog-item__content {
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-item:active .catalog-item__content {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-item__info {
@@ -126,8 +130,8 @@
 
   @media ($tablet) {
     width: auto;
-    padding-top: 0;
     margin: 0;
+    padding-top: 0;
     padding-right: 33px;
   }
 
@@ -140,7 +144,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   width: 205px;
   margin: 0 auto;
   padding-top: 23px;
@@ -158,8 +161,8 @@
 }
 
 .catalog-item__price {
-  width: 105px;
   flex-grow: 1;
+  width: 105px;
 
   font-weight: bold;
   font-size: 15px;
@@ -178,6 +181,7 @@
   height: 19px;
 
   font-size: 0;
+
   opacity: 0.2;
 
   &:hover {
