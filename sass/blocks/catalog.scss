@@ -1,16 +1,17 @@
 .catalog {
   padding-top: 30px;
+  margin-bottom: 25px;
 
   font-size: 0;
 
   @media ($tablet) {
-    padding-top: 78px;
-    margin-bottom: 53px;
+    padding-top: 80px;
+    margin-bottom: 51px;
   }
 
   @media ($desktop) {
     margin-bottom: 27px;
-    padding-top: 150px;
+    padding-top: 130px;
   }
 }
 

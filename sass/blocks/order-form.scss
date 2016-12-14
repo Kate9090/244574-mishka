@@ -2,7 +2,7 @@
   padding-top: 25px;
 
   @media ($tablet) {
-    padding-top: 39px;
+    padding-top: 40px;
   }
 
   @media ($desktop) {
@@ -15,6 +15,14 @@
 
   &:last-of-type {
     margin-bottom: 32px;
+  }
+
+  &--name {
+    margin-bottom: 32px;
+  }
+
+  &--mail {
+
   }
 
   @media ($tablet) {
@@ -34,6 +42,7 @@
     }
 
     &--name {
+      margin-bottom: 30px;
       @include container;
     }
 
@@ -46,17 +55,21 @@
     padding-left: 112px;
 
     &--name {
-      width: 1050px;
+      width: auto;
     }
 
     &--category {
-      width: 1050px;;
+      width: auto;
     }
   }
 }
 
 .order-form__inner {
   position: relative;
+
+  &--phone {
+    margin-bottom: 33px;
+  }
 
   @media ($tablet) {
     margin: 0;
@@ -65,7 +78,7 @@
     @include container;
 
     &--phone {
-      padding-top: 50px;
+      padding-top: 46px;
     }
 
     &--mail {
@@ -76,29 +89,29 @@
 
 .order-form__inner svg {
   position: absolute;
-  top: 35px;
-  right: 5px;
+  top: 34px;
+  right: 6px;
 }
 
 .order-form__inner--phone svg {
   @media ($tablet) {
-    top: 65px;
-    right: 10px;
+    top: 62px;
+    right: 26px;
   }
 
   @media ($desktop) {
-    right: 250px;
+    right: 232px;
   }
 }
 
 .order-form__inner--mail svg {
   @media ($tablet) {
     top: 15px;
-    right: 10px;
+    right: 21px;
   }
 
   @media ($desktop) {
-    right: 250px;
+    right: 229px;
   }
 }
 
@@ -177,7 +190,7 @@
 
     &--gray {
       background-color: #f1f1f1;
-      padding-bottom: 23px;
+      padding-bottom: 21px;
     }
 
     &--box {
@@ -233,7 +246,7 @@
     display: flex;
     width: 500px;
     align-items: baseline;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   @media ($desktop) {
@@ -409,7 +422,7 @@
   box-sizing: border-box;
   width: 100%;
   border: 0;
-  padding-top: 17px;
+  padding-top: 12px;
   padding-bottom: 14px;
   padding-right: 40px;
   border-bottom: 2px solid #000000;
@@ -430,6 +443,7 @@
     height: 142px;
     padding-top: 15px;
     border: 2px solid #000000;
+    padding-left: 14px;
 
     &:hover,
     &:focus {
@@ -438,6 +452,8 @@
   }
 
   @media ($tablet) {
+    padding-top: 18px;
+    padding-bottom: 12px;
     padding-left: 14px;
     padding-right: 70px;
   }

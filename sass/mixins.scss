@@ -25,4 +25,8 @@
   font-size: 17px;
   line-height: 18px;
   color: $color-text-placeholder;
+
+  @media ($tablet) {
+    font-size: 19px;
+  }
 }

@@ -1,5 +1,10 @@
 .order {
   padding-top: 22px;
+  margin-bottom: 54px;
+
+  @media ($tablet) {
+    margin-bottom: 37px;
+  }
 }
 
 .order__container {
@@ -27,6 +32,6 @@
 
   @media ($desktop) {
     width: 700px;
-    margin-top: 121px;
+    margin-top: 101px;
   }
 }

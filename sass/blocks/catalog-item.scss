@@ -5,13 +5,13 @@
 
   border-bottom: 1px solid #ededed;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media ($tablet) {
     flex-direction: row;
     margin-bottom: 53px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   @media ($desktop) {
@@ -59,10 +59,11 @@
   @media ($tablet) {
     font-size: 15px;
     line-height: 30px;
+    margin-top: -3px;
   }
 
   @media ($desktop) {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 }
 
