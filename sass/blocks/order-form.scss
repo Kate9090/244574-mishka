@@ -2,7 +2,7 @@
   padding-top: 25px;
 
   @media ($tablet) {
-    padding-top: 39px;
+    padding-top: 40px;
   }
 
   @media ($desktop) {
@@ -17,23 +17,30 @@
     margin-bottom: 32px;
   }
 
+  &--name {
+    margin-bottom: 32px;
+  }
+
   @media ($tablet) {
-    margin-bottom: 26px;
     display: flex;
     align-items: baseline;
+    margin-bottom: 26px;
 
     &--category {
       @include container;
     }
 
     &--color {
-      padding-bottom: 49px;
-      padding-top: 27px;
-      background-color: #f1f1f1;
       margin-bottom: 20px;
+      padding-top: 27px;
+      padding-bottom: 49px;
+
+      background-color: #f1f1f1;
     }
 
     &--name {
+      margin-bottom: 30px;
+
       @include container;
     }
 
@@ -44,31 +51,58 @@
 
   @media ($desktop) {
     padding-left: 112px;
-
-    &--name {
-      width: 1050px;
-    }
-
-    &--category {
-      width: 1050px;;
-    }
   }
 }
 
 .order-form__inner {
+  position: relative;
+
+  &--phone {
+    margin-bottom: 33px;
+  }
+
   @media ($tablet) {
-    margin: 0;
     display: flex;
     align-items: baseline;
+    margin: 0;
+
     @include container;
 
-    &--space-top {
-      padding-top: 50px;
+    &--phone {
+      padding-top: 46px;
     }
 
-    &--space-bottom {
+    &--mail {
       padding-bottom: 28px;
     }
+  }
+}
+
+.order-form__inner svg {
+  position: absolute;
+  top: 34px;
+  right: 6px;
+}
+
+.order-form__inner--phone svg {
+  @media ($tablet) {
+    top: 62px;
+    right: 26px;
+  }
+
+  @media ($desktop) {
+    right: 232px;
+  }
+}
+
+.order-form__inner--mail svg {
+  @media ($tablet) {
+    top: 15px;
+    right: 21px;
+  }
+
+  @media ($desktop) {
+    right: 229px;
   }
 }
 
@@ -79,18 +113,20 @@
 .order-form__title {
   display: flex;
   flex-shrink: 0;
+
   @include form-title;
 
   &::after {
-    display: block;
     content: "";
-    margin-left: 27px;
-    width: 50px;
 
+    display: block;
     flex-grow: 1;
-    height: 1px;
-    background-color: $color-cyan;
     align-self: center;
+    width: 50px;
+    height: 1px;
+    margin-left: 27px;
+
+    background-color: $color-cyan;
   }
 
   @media ($tablet) {
@@ -102,7 +138,7 @@
   }
 
   @media ($desktop) {
-    width: 113px
+    width: 113px;
   }
 }
 
@@ -138,27 +174,29 @@
 
     &--small {
       display: flex;
-      align-items: baseline;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 0;
+      align-items: baseline;
       margin-top: 0;
+      margin-bottom: 0;
     }
 
     &--gray {
+      padding-bottom: 21px;
+
       background-color: #f1f1f1;
-      padding-bottom: 23px;
     }
 
     &--box {
       margin-top: 50px;
+
       @include container;
     }
   }
 
   @media ($desktop) {
-    width: 926px;
     justify-content: flex-start;
+    width: 926px;
 
     &--gray {
       width: auto;
@@ -201,9 +239,9 @@
 .order-form__lines--name .order-form__line {
   @media ($tablet) {
     display: flex;
-    width: 500px;
     align-items: baseline;
-    margin-bottom: 24px;
+    width: 500px;
+    margin-bottom: 20px;
   }
 
   @media ($desktop) {
@@ -228,13 +266,14 @@
 .order-form__label {
   position: relative;
 
+  display: block;
   padding-left: 62px;
+
+  font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  color: $color-text-title;
-  font-weight: bold;
-  display: block;
   vertical-align: middle;
+  color: $color-text-title;
 
   &--f-name,
   &--s-name,
@@ -256,31 +295,36 @@
 
   &--radio {
     padding-top: 16px;
+
     cursor: pointer;
 
     &::before {
+      content: "";
       position: absolute;
-      left: 0;
       top: 7px;
+      left: 0;
+
+      display: block;
       width: 36px;
       height: 35px;
-      content: "";
-      display: block;
-      border-radius: 50%;
+
       border: 2px solid #444444;
+      border-radius: 50%;
     }
 
     &::after {
+      content: "";
       position: absolute;
       top: 18px;
       left: 12px;
+
+      display: block;
+      display: none;
       width: 16px;
       height: 16px;
-      content: "";
-      display: block;
-      border-radius: 50%;
+
       background-color: $color-cyan;
-      display: none;
+      border-radius: 50%;
     }
   }
 
@@ -293,41 +337,48 @@
   &--checkbox {
     padding-top: 20px;
     padding-bottom: 6px;
+
     cursor: pointer;
 
     &::before {
+      content: "";
       position: absolute;
       top: 7px;
       left: 0;
+
+      display: block;
       width: 36px;
       height: 36px;
-      content: "";
-      display: block;
+
       border: 2px solid #444444;
     }
 
     &::after {
+      content: "";
       position: absolute;
       top: 20px;
       left: 9px;
+
+      display: block;
+      display: none;
       width: 20px;
       height: 8px;
-      content: "";
-      display: block;
-      border-left: 2px solid #000000;
+
       border-bottom: 2px solid #000000;
+      border-left: 2px solid #000000;
       transform: rotate(-45deg);
-      display: none;
     }
   }
 
   @media ($tablet) {
-    font-size: 19px;
     padding-left: 80px;
+
+    font-size: 19px;
 
     &--radio {
       &::before {
-        top: 0px;
+        top: 0;
+
         width: 48px;
         height: 47px;
       }
@@ -335,6 +386,7 @@
       &::after {
         top: 16px;
         left: 16px;
+
         width: 20px;
         height: 20px;
       }
@@ -349,6 +401,7 @@
       &:after {
         top: 21px;
         left: 12px;
+
         width: 28px;
         height: 13px;
       }
@@ -357,12 +410,12 @@
 }
 
 .order-form__label--radio:hover::before,
-.order-form__label--checkbox:hover::before  {
+.order-form__label--checkbox:hover::before {
   border-color: $color-cyan;
 }
 
 .order-form__label--radio:active::before,
-.order-form__label--checkbox:active::before  {
+.order-form__label--checkbox:active::before {
   border-color: #c7c7c7;
 }
 
@@ -375,20 +428,22 @@
 }
 
 .order-form__text {
-  background-color: transparent;
   box-sizing: border-box;
   width: 100%;
-  border: 0;
-  padding-top: 17px;
-  padding-bottom: 14px;
+  padding-top: 12px;
   padding-right: 40px;
+  padding-bottom: 14px;
+
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #000000;
+
+  background-color: transparent;
+  border: 0;
   border-bottom: 2px solid #000000;
   outline: none;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 17px;
-  font-weight: normal;
-  line-height: 24px;
-  color: #000000;
 
   &:hover,
   &:focus {
@@ -396,10 +451,13 @@
   }
 
   &--box {
-    resize: none;
     height: 142px;
     padding-top: 15px;
+    padding-left: 14px;
+
     border: 2px solid #000000;
+
+    resize: none;
 
     &:hover,
     &:focus {
@@ -408,9 +466,15 @@
   }
 
   @media ($tablet) {
-    padding-left: 14px;
+    padding-top: 18px;
     padding-right: 70px;
+    padding-bottom: 12px;
+    padding-left: 14px;
   }
+}
+
+.order-form__text:hover ~ svg path {
+  fill: #46c1ae;
 }
 
 .order-form__line--small .order-form__text {
@@ -437,40 +501,18 @@
 
 .order-form__caption {
   position: relative;
+
   display: flex;
-  @include form-title;
   align-items: center;
   margin-bottom: 7px;
 
-  &--phone {
-    &:before {
-      content: "";
-      position: absolute;
-      top: 35px;
-      right: 5px;
-      width: 25px;
-      height: 24px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-    }
-  }
+  @include form-title;
 
+  /*
   &--mail {
     padding-top: 15px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 47px;
-      right: 5px;
-      width: 32px;
-      height: 32px;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-    }
   }
+*/
 
   &--box {
     padding-top: 15px;
@@ -478,13 +520,14 @@
   }
 
   &::after {
-    display: block;
     content: "";
-    margin-left: 25px;
-    width: 50px;
 
+    display: block;
     flex-grow: 1;
+    width: 50px;
     height: 1px;
+    margin-left: 25px;
+
     background-color: $color-cyan;
   }
 
@@ -494,38 +537,10 @@
     &::after {
       display: none;
     }
-
-    &--phone {
-      &::before {
-        top: -3px;
-        right: -469px;
-      }
-    }
-
-    &--mail {
-      &::before {
-        top: 9px;
-        right: -469px;
-      }
-    }
   }
 
   @media ($desktop) {
     width: 113px;
-
-    &--phone {
-      &::before {
-        top: -3px;
-        right: -688px;
-      }
-    }
-
-    &--mail {
-      &::before {
-        top: 9px;
-        right: -688px;
-      }
-    }
   }
 }
 
@@ -536,25 +551,27 @@
   }
 
   @media ($desktop) {
-    margin-left: 113px;;
     margin-top: 49px;
+    margin-left: 113px;;
   }
 }
 
 .order-form__note {
   display: block;
+  margin-top: 10px;
+  margin-bottom: 31px;
+
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 31px;
-  margin-top: 10px;
 
   @media ($tablet) {
     order: 1;
+
     font-size: 17px;
   }
 
   @media ($desktop) {
-    margin-left: auto;
     margin-right: 111px;
+    margin-left: auto;
   }
 }

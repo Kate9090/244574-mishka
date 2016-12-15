@@ -1,5 +1,20 @@
 .reviews {
+  position: relative;
+
   padding-top: 28px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -51px;
+
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 7px;
+  }
 
   @media ($tablet) {
     margin-bottom: 80px;
@@ -9,11 +24,33 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
+
+    &:before {
+      bottom: -86px;
+
+      height: 17px;
+
+      background-size: 768px 17px;
+    }
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media ($desktop) {
-    background: none;
     padding-top: 7px;
+
+    background: none;
+
+    &:before {
+      top: auto;
+      bottom: -89px;
+
+      height: 23px;
+
+      background-size: 1150px 23px;;
+    }
   }
 }
 
@@ -21,20 +58,19 @@
   display: flex;
   flex-direction: column;
 
-
   @include container;
 
   @media ($tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   @media ($desktop) {
+    width: 875px;
     padding-top: 70px;
     padding-left: 175px;
-    width: 875px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -69,9 +105,10 @@
   }
 
   @media ($desktop) {
+    margin-top: 0;
+
     font-size: 53px;
     line-height: 57px;
-    margin-top: 0;
   }
 }
 
@@ -103,22 +140,23 @@
 
   @media ($tablet) {
     order: 3;
-    padding-bottom: 46px;
     margin-top: 58px;
+    padding-bottom: 46px;
 
     font-size: 17px;
   }
 
   @media ($desktop) {
     flex-basis: 350px;
-    padding-bottom: 100px;
     margin-top: 36px;
+    padding-bottom: 97px;
   }
 }
 
 .reviews__author-contact {
   display: inline-block;
   margin-top: 3px;
+
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
@@ -136,10 +174,9 @@
 
   @media ($tablet) {
     order: 4;
-    margin-right: 5px;
-    margin-top: 60px;
-
     width: 167px;
+    margin-top: 60px;
+    margin-right: 5px;
   }
 
   @media ($desktop) {

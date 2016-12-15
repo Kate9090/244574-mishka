@@ -1,19 +1,20 @@
 .modal {
   display: none;
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 35px;
   padding-right: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 260px;
 
   border-top: 1px solid #c7c7c7;
 
   @media ($tablet) {
     width: 566px;
-    border: 1px solid #c7c7c7;
     padding-top: 50px;
+
+    border: 1px solid #c7c7c7;
   }
 }
 

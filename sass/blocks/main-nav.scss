@@ -1,17 +1,19 @@
 .main-nav {
-  padding: 0;
+  order: 2;
+  width: 100%;
   margin: 0;
+  padding: 0;
 
   list-style-type: none;
-  width: 100%;
-  order: 2;
   font-size: 0;
 
   @media (max-width: 767px) {
     position: absolute;
     top: 77px;
-    background-color: #ffffff;
     z-index: 2;
+    left: 0;
+
+    background-color: #ffffff;
 
     &--closed {
       display: none;
@@ -25,13 +27,14 @@
 
   @media ($desktop) {
     order: 1;
-    width: 46%;
+    width: 43%;
   }
 }
 
 .no-js .main-nav {
-  display: block;
   position: static;
+
+  display: block;
 }
 
 .main-nav__item {
@@ -41,40 +44,44 @@
     display: inline-block;
 
     vertical-align: top;
+
     border-top: 0;
   }
 }
 
 .main-nav__link {
   display: block;
-  font-size: 17px;
-  line-height: 24px;
-  color: $color-text-title;
-  font-weight: bold;
-  text-decoration: none;
   padding-top: 30px;
   padding-bottom: 30px;
 
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-text-title;
+  text-decoration: none;
+
   @media ($tablet) {
-    font-size: 15px;
     margin-right: 36px;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    font-size: 15px;
   }
 
   @media ($desktop) {
-    font-size: 17px;
-    padding-top: 33px;
-    padding-bottom: 30px;
     margin-right: 0;
+    padding-top: 30px;
     padding-right: 35px;
+    padding-bottom: 35px;
+
+    font-size: 17px;
 
     &--catalog {
       border-right: 1px solid #ececec;
     }
 
     &--order {
-      padding-left: 35px
+      padding-left: 35px;
     }
   }
 }
@@ -88,14 +95,14 @@
 }
 
 .main-nav__align-center {
-  padding-left: 46px;
   display: block;
   width: 204px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  padding-left: 46px;
 
   @media ($tablet) {
-    padding-left: 0;
     width: auto;
+    padding-left: 0;
   }
 }

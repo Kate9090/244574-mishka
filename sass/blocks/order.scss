@@ -1,5 +1,10 @@
 .order {
+  margin-bottom: 54px;
   padding-top: 22px;
+
+  @media ($tablet) {
+    margin-bottom: 37px;
+  }
 }
 
 .order__container {
@@ -17,16 +22,17 @@
   font-size: 13px;
 
   @media ($tablet) {
-    margin-left: auto;
+    width: 668px;
+    margin-top: 51px;
     margin-right: auto;
+    margin-left: auto;
+
     font-size: 17px;
     line-height: 30px;
-    margin-top: 51px;
-    width: 668px;
   }
 
   @media ($desktop) {
     width: 700px;
-    margin-top: 121px;
+    margin-top: 101px;
   }
 }
