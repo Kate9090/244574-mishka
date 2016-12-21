@@ -160,6 +160,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  vertical-align: baseline;
 
   @media ($tablet) {
     display: block;
@@ -167,8 +168,9 @@
 }
 
 .reviews__btns {
+  height: 52px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 
   font-size: 0;
 

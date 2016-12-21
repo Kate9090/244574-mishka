@@ -140,6 +140,14 @@
   @media ($desktop) {
     width: 113px;
   }
+
+  &--name {
+
+    @media ($desktop) {
+      align-self: flex-start;
+      margin-top: 47px;
+    }
+  }
 }
 
 .order-form__lines {
@@ -207,7 +215,7 @@
     }
 
     &--box {
-      padding-left: 0;
+      padding-left: 112px;
     }
   }
 }
@@ -571,7 +579,7 @@
   }
 
   @media ($desktop) {
-    margin-right: 111px;
+    margin-right: 235px;
     margin-left: auto;
   }
 }
