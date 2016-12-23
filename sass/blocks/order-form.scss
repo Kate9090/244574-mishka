@@ -63,7 +63,7 @@
 
   @media ($tablet) {
     display: flex;
-    align-items: baseline;
+    //align-items: baseline;
     margin: 0;
 
     @include container;
@@ -76,6 +76,14 @@
       padding-bottom: 28px;
     }
   }
+}
+
+.order-form__inner--phone .order-form__text {
+  height: 56px;
+}
+
+.order-form__inner--phone .order-form__text {
+  height: 56px;
 }
 
 .order-form__inner svg {
@@ -133,6 +141,10 @@
 
   @media ($tablet) {
     width: 167px;
+
+    &--color {
+      padding-top: 40px;
+    }
 
     &::after {
       display: none;
@@ -543,6 +555,8 @@
 
   @media ($tablet) {
     width: 167px;
+    display: block;
+    padding-top: 21px;
 
     &::after {
       display: none;
