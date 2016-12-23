@@ -10,8 +10,8 @@
   @media (max-width: 767px) {
     position: absolute;
     top: 247px;
-    z-index: 2;
     left: 0;
+    z-index: 2;
 
     background-color: #ffffff;
 
@@ -22,7 +22,9 @@
 
   @media ($tablet) {
     flex-grow: 1;
+    box-sizing: border-box;
     width: auto;
+    height: 89px;
 
     font-size: 0;
     text-align: right;
@@ -40,6 +42,8 @@
 
   @media ($tablet) {
     display: inline-block;
+    box-sizing: border-box;
+    height: 89px;
 
     vertical-align: top;
 
@@ -74,6 +78,8 @@
   }
 
   @media ($tablet) {
+    box-sizing: border-box;
+    height: 89px;
     padding-right: 0;
     padding-bottom: 35px;
     padding-left: 37px;
