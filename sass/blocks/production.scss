@@ -39,6 +39,9 @@
   }
 
   @media ($desktop) {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 682px;
     height: 455px;
     margin-right: 22px;
@@ -53,6 +56,7 @@
 }
 
 .production__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -71,8 +75,10 @@
   }
 
   @media ($desktop) {
-    height: 455px;
-
+    min-height: 457px;
+    box-sizing: border-box;
+    padding-left: 760px;
+    padding-bottom: 40px;
     border: 1px solid #ececec;
   }
 }
